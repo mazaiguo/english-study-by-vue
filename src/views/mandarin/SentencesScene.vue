@@ -1,7 +1,12 @@
 <template>
   <div class="scene-container" :style="{ backgroundColor: theme.colors.background }">
+    <div v-if="loading" class="loading-message" :style="{ color: theme.colors.primaryText }">
+      <div class="loading-icon">⏳</div>
+      <div class="loading-text">正在加载句子数据...</div>
+    </div>
+
     <LearningCard
-      v-if="filteredSentences.length > 0"
+      v-else-if="filteredSentences.length > 0"
       :current-index="currentIndex"
       :total-items="filteredSentences.length"
       :on-next="nextSentence"
@@ -48,10 +53,10 @@ import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
 import { useSettingsStore } from '@/stores/settings'
 import { useTTS } from '@/composables/useTTS'
+import { loadData } from '@/utils/dataLoader'
 import LearningCard from '@/components/LearningCard.vue'
 import MandarinSentenceCard from '@/components/MandarinSentenceCard.vue'
 import SettingsPanel from '@/components/SettingsPanel.vue'
-import sentencesData from '@/data/mandarin_sentences.json'
 
 console.log('📖 普通话句子场景加载')
 
@@ -61,9 +66,10 @@ const settingsStore = useSettingsStore()
 const { speakMandarin } = useTTS()
 
 const theme = computed(() => themeStore.currentTheme)
-const sentences = ref(sentencesData.sentences || [])
+const sentences = ref([])
 const currentIndex = ref(0)
 const showSettings = ref(false)
+const loading = ref(true)
 
 // 根据选择的课程过滤句子
 const filteredSentences = computed(() => {
@@ -127,9 +133,19 @@ const speakSentence = () => {
   }
 }
 
-onMounted(() => {
-  console.log('✅ 普通话句子场景已挂载，共', sentences.value.length, '个句子')
-  console.log('📚 可用课程:', availableLessons.value)
+onMounted(async () => {
+  console.log('✅ 普通话句子场景已挂载')
+  
+  try {
+    const data = await loadData('mandarin_sentences', true)
+    sentences.value = data.sentences || []
+    console.log('📚 共', sentences.value.length, '个句子')
+    console.log('📚 可用课程:', availableLessons.value)
+  } catch (error) {
+    console.error('❌ 加载句子数据失败:', error)
+  } finally {
+    loading.value = false
+  }
 })
 </script>
 
@@ -177,6 +193,30 @@ onMounted(() => {
 .open-settings-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.loading-icon {
+  font-size: 80px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
 

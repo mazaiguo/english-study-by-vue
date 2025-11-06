@@ -1,7 +1,12 @@
 <template>
   <div class="scene-container" :style="{ backgroundColor: theme.colors.background }">
+    <div v-if="loading" class="loading-message" :style="{ color: theme.colors.primaryText }">
+      <div class="loading-icon">⏳</div>
+      <div class="loading-text">正在加载声调数据...</div>
+    </div>
+
     <LearningCard
-      v-if="filteredTones.length > 0"
+      v-else-if="filteredTones.length > 0"
       :current-index="currentIndex"
       :total-items="filteredTones.length"
       :on-next="nextItem"
@@ -88,9 +93,9 @@ import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
 import { useSettingsStore } from '@/stores/settings'
 import { useTTS } from '@/composables/useTTS'
+import { loadData } from '@/utils/dataLoader'
 import LearningCard from '@/components/LearningCard.vue'
 import SettingsPanel from '@/components/SettingsPanel.vue'
-import tonesData from '@/data/pinyin_tones.json'
 
 console.log('📖 拼音声调场景加载')
 
@@ -100,9 +105,10 @@ const settingsStore = useSettingsStore()
 const { speakPinyin } = useTTS()
 
 const theme = computed(() => themeStore.currentTheme)
-const tones = ref(tonesData.tones || [])
+const tones = ref([])
 const currentIndex = ref(0)
 const showSettings = ref(false)
+const loading = ref(true)
 
 // 根据课程过滤
 const filteredTones = computed(() => {
@@ -168,13 +174,22 @@ const speakItem = () => {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
   console.log('✅ 拼音声调场景已挂载')
-  console.log('📚 共', tones.value.length, '个声调')
-  console.log('📚 可用课程:', availableLessons.value)
-  console.log('📚 当前课程:', settingsStore.currentLesson === 0 ? '全部' : `第${settingsStore.currentLesson}课`)
-  console.log('📚 当前显示:', filteredTones.value.length, '个声调')
-  console.log('⚙️ 当前语速:', settingsStore.speechRate + 'x')
+  
+  try {
+    const data = await loadData('pinyin_tones', true)
+    tones.value = data.tones || []
+    console.log('📚 共', tones.value.length, '个声调')
+    console.log('📚 可用课程:', availableLessons.value)
+    console.log('📚 当前课程:', settingsStore.currentLesson === 0 ? '全部' : `第${settingsStore.currentLesson}课`)
+    console.log('📚 当前显示:', filteredTones.value.length, '个声调')
+    console.log('⚙️ 当前语速:', settingsStore.speechRate + 'x')
+  } catch (error) {
+    console.error('❌ 加载声调数据失败:', error)
+  } finally {
+    loading.value = false
+  }
 })
 </script>
 
@@ -309,6 +324,30 @@ onMounted(() => {
 .open-settings-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.loading-icon {
+  font-size: 80px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
 

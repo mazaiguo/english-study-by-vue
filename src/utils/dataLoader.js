@@ -6,7 +6,10 @@
 const DEBUG = true
 
 // 远程数据源配置
-const REMOTE_BASE_URL = 'https://mazaiguo.github.io/blogimg/english-study-data'
+// 开发环境使用代理路径（避免CORS），生产环境使用完整URL
+const REMOTE_BASE_URL = import.meta.env.DEV 
+  ? '/api/data'  // 开发环境：通过Vite代理
+  : 'https://mazaiguo.github.io/blogimg/english-study-data'  // 生产环境：直接访问
 
 // 数据文件映射
 const DATA_FILES = {
@@ -50,7 +53,9 @@ export async function loadData(dataKey, useRemote = true) {
   // 优先尝试远程加载
   if (useRemote) {
     try {
-      const remoteUrl = `${REMOTE_BASE_URL}/${fileName}`
+      // 添加时间戳破坏缓存
+      const timestamp = Date.now()
+      const remoteUrl = `${REMOTE_BASE_URL}/${fileName}?t=${timestamp}`
       
       if (DEBUG) {
         console.log(`🌐 尝试从远程加载: ${remoteUrl}`)
@@ -60,7 +65,9 @@ export async function loadData(dataKey, useRemote = true) {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
-          'Cache-Control': 'no-cache' // 确保获取最新数据
+          'Cache-Control': 'no-cache, no-store, must-revalidate', // 确保获取最新数据
+          'Pragma': 'no-cache',
+          'Expires': '0'
         },
         cache: 'no-store'
       })

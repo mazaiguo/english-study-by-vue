@@ -1,7 +1,12 @@
 <template>
   <div class="scene-container" :style="{ backgroundColor: theme.colors.background }">
+    <div v-if="loading" class="loading-message" :style="{ color: theme.colors.primaryText }">
+      <div class="loading-icon">⏳</div>
+      <div class="loading-text">正在加载韵母数据...</div>
+    </div>
+
     <LearningCard
-      v-if="filteredFinals.length > 0"
+      v-else-if="filteredFinals.length > 0"
       :current-index="currentIndex"
       :total-items="filteredFinals.length"
       :on-next="nextItem"
@@ -48,10 +53,10 @@ import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
 import { useSettingsStore } from '@/stores/settings'
 import { useTTS } from '@/composables/useTTS'
+import { loadData } from '@/utils/dataLoader'
 import LearningCard from '@/components/LearningCard.vue'
 import PinyinCard from '@/components/PinyinCard.vue'
 import SettingsPanel from '@/components/SettingsPanel.vue'
-import finalsData from '@/data/pinyin_finals.json'
 
 console.log('📖 拼音韵母场景加载')
 
@@ -61,9 +66,10 @@ const settingsStore = useSettingsStore()
 const { speakPinyin } = useTTS()
 
 const theme = computed(() => themeStore.currentTheme)
-const finals = ref(finalsData.finals || [])
+const finals = ref([])
 const currentIndex = ref(0)
 const showSettings = ref(false)
+const loading = ref(true)
 
 // 根据课程过滤
 const filteredFinals = computed(() => {
@@ -129,13 +135,22 @@ const speakItem = () => {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
   console.log('✅ 拼音韵母场景已挂载')
-  console.log('📚 共', finals.value.length, '个韵母')
-  console.log('📚 可用课程:', availableLessons.value)
-  console.log('📚 当前课程:', settingsStore.currentLesson === 0 ? '全部' : `第${settingsStore.currentLesson}课`)
-  console.log('📚 当前显示:', filteredFinals.value.length, '个韵母')
-  console.log('⚙️ 当前语速:', settingsStore.speechRate + 'x')
+  
+  try {
+    const data = await loadData('pinyin_finals', true)
+    finals.value = data.finals || []
+    console.log('📚 共', finals.value.length, '个韵母')
+    console.log('📚 可用课程:', availableLessons.value)
+    console.log('📚 当前课程:', settingsStore.currentLesson === 0 ? '全部' : `第${settingsStore.currentLesson}课`)
+    console.log('📚 当前显示:', filteredFinals.value.length, '个韵母')
+    console.log('⚙️ 当前语速:', settingsStore.speechRate + 'x')
+  } catch (error) {
+    console.error('❌ 加载韵母数据失败:', error)
+  } finally {
+    loading.value = false
+  }
 })
 </script>
 
@@ -183,6 +198,30 @@ onMounted(() => {
 .open-settings-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.loading-icon {
+  font-size: 80px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
 
