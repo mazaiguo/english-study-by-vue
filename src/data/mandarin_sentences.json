@@ -7,7 +7,8 @@
       "translation": "How are you?",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_1.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "translation": "I'm fine.",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_2.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "translation": "Good morning!",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_3.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "translation": "Good night.",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_4.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "translation": "I love you.",
       "category": "emotion",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_5.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "translation": "I'm hungry.",
       "category": "daily",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_6.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "translation": "I'm thirsty.",
       "category": "daily",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_7.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "translation": "What is this?",
       "category": "question",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_8.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "translation": "That is a book.",
       "category": "answer",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_9.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "translation": "I like apples.",
       "category": "preference",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_10.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "translation": "The weather is nice today.",
       "category": "weather",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_11.jpg"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "translation": "I am studying.",
       "category": "activity",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_12.jpg"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "translation": "Please help me.",
       "category": "request",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_13.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "translation": "I'm sorry.",
       "category": "apology",
       "difficulty": "easy",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "mandarin_sentence_14.jpg"
     },
     {
       "id": 15,
@@ -133,8 +147,8 @@
       "translation": "It's okay.",
       "category": "response",
       "difficulty": "easy",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "mandarin_sentence_15.jpg"
     }
   ]
 }
-

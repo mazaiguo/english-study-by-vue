@@ -32,6 +32,16 @@
       </span>
     </div>
 
+    <!-- 图片 -->
+    <div v-if="pinyin.imageFile" class="image-container">
+      <img
+        :src="getImageUrl(pinyin.imageFile)"
+        :alt="pinyin.pinyin"
+        class="pinyin-image"
+        @error="handleImageError"
+      />
+    </div>
+
     <!-- 分类标签 -->
     <div
       v-if="pinyin.category"
@@ -49,6 +59,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
+import { getImageUrl, handleImageError } from '@/utils/imageLoader'
 
 const props = defineProps({
   pinyin: {
@@ -67,8 +78,40 @@ const theme = computed(() => themeStore.currentTheme)
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
   position: relative;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.pinyin-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.pinyin-image.loading {
+  opacity: 0.5;
+}
+
+.pinyin-image.loaded {
+  opacity: 1;
+}
+
+.pinyin-image.image-error {
+  object-fit: contain;
 }
 
 .pinyin-text {
@@ -149,6 +192,56 @@ const theme = computed(() => themeStore.currentTheme)
   .category-badge {
     font-size: 16px;
     padding: 5px 12px;
+  }
+}
+
+/* iPhone 14 Pro Max 优化 (430px) */
+@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
+  .pinyin-card {
+    gap: 45px;
+  }
+
+  .pinyin-text {
+    font-size: 160px; /* Pro Max 更大 */
+  }
+
+  .description-text {
+    font-size: 30px;
+  }
+
+  .example-section {
+    font-size: 58px;
+    gap: 20px;
+  }
+
+  .category-badge {
+    font-size: 18px;
+    padding: 7px 16px;
+  }
+}
+
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
+@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
+  .pinyin-card {
+    gap: 40px;
+  }
+
+  .pinyin-text {
+    font-size: 135px; /* 基准拼音大小 */
+  }
+
+  .description-text {
+    font-size: 25px;
+  }
+
+  .example-section {
+    font-size: 48px;
+    gap: 15px;
+  }
+
+  .category-badge {
+    font-size: 16px;
+    padding: 6px 13px;
   }
 }
 </style>

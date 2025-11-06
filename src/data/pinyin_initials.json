@@ -8,7 +8,8 @@
       "examplePinyin": "bà",
       "category": "双唇音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_initial_1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "examplePinyin": "pó",
       "category": "双唇音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_initial_2.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "examplePinyin": "mā",
       "category": "双唇音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_initial_3.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "examplePinyin": "fó",
       "category": "唇齿音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_initial_4.jpg"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "examplePinyin": "dà",
       "category": "舌尖音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_initial_5.jpg"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "examplePinyin": "tā",
       "category": "舌尖音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_initial_6.jpg"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "examplePinyin": "nà",
       "category": "舌尖音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_initial_7.jpg"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "examplePinyin": "lā",
       "category": "舌尖音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_initial_8.jpg"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "examplePinyin": "gē",
       "category": "舌根音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_initial_9.jpg"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "examplePinyin": "kē",
       "category": "舌根音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_initial_10.jpg"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "examplePinyin": "hē",
       "category": "舌根音",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_initial_11.jpg"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "examplePinyin": "jī",
       "category": "舌面音",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_initial_12.jpg"
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "examplePinyin": "qī",
       "category": "舌面音",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_initial_13.jpg"
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "examplePinyin": "xī",
       "category": "舌面音",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_initial_14.jpg"
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "examplePinyin": "zhī",
       "category": "翘舌音",
       "difficulty": "hard",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_initial_15.jpg"
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "examplePinyin": "chī",
       "category": "翘舌音",
       "difficulty": "hard",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_initial_16.jpg"
     },
     {
       "id": 17,
@@ -168,7 +184,8 @@
       "examplePinyin": "shī",
       "category": "翘舌音",
       "difficulty": "hard",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_initial_17.jpg"
     },
     {
       "id": 18,
@@ -178,7 +195,8 @@
       "examplePinyin": "rì",
       "category": "翘舌音",
       "difficulty": "hard",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_initial_18.jpg"
     },
     {
       "id": 19,
@@ -188,7 +206,8 @@
       "examplePinyin": "zì",
       "category": "平舌音",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_initial_19.jpg"
     },
     {
       "id": 20,
@@ -198,7 +217,8 @@
       "examplePinyin": "cì",
       "category": "平舌音",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_initial_20.jpg"
     },
     {
       "id": 21,
@@ -208,7 +228,8 @@
       "examplePinyin": "sī",
       "category": "平舌音",
       "difficulty": "medium",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "pinyin_initial_21.jpg"
     }
   ]
 }

@@ -7,7 +7,8 @@
       "translation": "你好",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_word_1.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "translation": "再见",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_word_2.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "translation": "谢谢你",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_word_3.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "translation": "苹果",
       "level": 1,
       "category": "food",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_word_4.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "translation": "香蕉",
       "level": 1,
       "category": "food",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_word_5.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "translation": "猫",
       "level": 1,
       "category": "animals",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_word_6.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "translation": "狗",
       "level": 1,
       "category": "animals",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_word_7.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "translation": "书",
       "level": 1,
       "category": "objects",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_word_8.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "translation": "笔",
       "level": 1,
       "category": "objects",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_word_9.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "translation": "太阳",
       "level": 1,
       "category": "nature",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_word_10.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "translation": "月亮",
       "level": 1,
       "category": "nature",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_word_11.jpg"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "translation": "星星",
       "level": 1,
       "category": "nature",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_word_12.jpg"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "translation": "水",
       "level": 1,
       "category": "food",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_word_13.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "translation": "红色",
       "level": 1,
       "category": "colors",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_word_14.jpg"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "translation": "蓝色",
       "level": 1,
       "category": "colors",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_word_15.jpg"
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "translation": "黄色",
       "level": 1,
       "category": "colors",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_word_16.jpg"
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "translation": "快乐的",
       "level": 1,
       "category": "emotions",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_word_17.jpg"
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "translation": "爱",
       "level": 1,
       "category": "emotions",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_word_18.jpg"
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "translation": "家庭",
       "level": 1,
       "category": "family",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_word_19.jpg"
     },
     {
       "id": 20,
@@ -178,7 +197,8 @@
       "translation": "朋友",
       "level": 1,
       "category": "people",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_word_20.jpg"
     }
   ]
 }

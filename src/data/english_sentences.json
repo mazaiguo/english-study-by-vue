@@ -7,7 +7,8 @@
       "translation": "你好，你好吗？",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_sentence_1.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "translation": "我很好，谢谢你。",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_sentence_2.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "translation": "早上好！",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "english_sentence_3.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "translation": "晚安。",
       "category": "greeting",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_sentence_4.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "translation": "我爱你。",
       "category": "emotion",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_sentence_5.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "translation": "这是什么？",
       "category": "question",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "english_sentence_6.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "translation": "这是一本书。",
       "category": "answer",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_sentence_7.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "translation": "我喜欢苹果。",
       "category": "preference",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_sentence_8.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "translation": "今天天气很好。",
       "category": "weather",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "english_sentence_9.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "translation": "我在学习。",
       "category": "activity",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_sentence_10.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "translation": "请帮帮我。",
       "category": "request",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_sentence_11.jpg"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "translation": "我饿了。",
       "category": "feeling",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "english_sentence_12.jpg"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "translation": "我可以要些水吗？",
       "category": "request",
       "difficulty": "medium",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_sentence_13.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "translation": "对不起。",
       "category": "apology",
       "difficulty": "easy",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_sentence_14.jpg"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "translation": "没关系。",
       "category": "response",
       "difficulty": "easy",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "english_sentence_15.jpg"
     }
   ]
 }

@@ -2,42 +2,92 @@
   <div class="scene-container" :style="{ backgroundColor: theme.colors.background }">
     <LearningCard
       :current-index="currentIndex"
-      :total-items="sentences.length"
+      :total-items="filteredSentences.length"
       :on-next="nextSentence"
       :on-previous="previousSentence"
       :on-tap="speakSentence"
+      :on-swipe-up="openSettings"
     >
       <template #content>
         <EnglishSentenceCard :sentence="currentSentence" />
       </template>
     </LearningCard>
+
+    <!-- 设置面板 -->
+    <SettingsPanel
+      :is-visible="showSettings"
+      :lessons="availableLessons"
+      :show-english-settings="true"
+      :test-text="currentSentence?.sentence || 'Hello, how are you?'"
+      @close="closeSettings"
+      @lesson-change="handleLessonChange"
+    />
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
+import { useSettingsStore } from '@/stores/settings'
 import { useTTS } from '@/composables/useTTS'
 import LearningCard from '@/components/LearningCard.vue'
 import EnglishSentenceCard from '@/components/EnglishSentenceCard.vue'
+import SettingsPanel from '@/components/SettingsPanel.vue'
 import sentencesData from '@/data/english_sentences.json'
 
 console.log('📖 英语句子场景加载')
 
 const router = useRouter()
 const themeStore = useThemeStore()
+const settingsStore = useSettingsStore()
 const { speakEnglish } = useTTS()
 
 const theme = computed(() => themeStore.currentTheme)
 const sentences = ref(sentencesData.sentences || [])
 const currentIndex = ref(0)
+const showSettings = ref(false)
 
-const currentSentence = computed(() => sentences.value[currentIndex.value])
+// 根据选择的课程过滤句子
+const filteredSentences = computed(() => {
+  if (settingsStore.currentLesson === 0) {
+    return sentences.value
+  }
+  return sentences.value.filter(sentence => sentence.lesson === settingsStore.currentLesson)
+})
+
+// 获取所有可用的课程
+const availableLessons = computed(() => {
+  const lessons = new Set(sentences.value.map(sentence => sentence.lesson).filter(Boolean))
+  return Array.from(lessons).sort((a, b) => a - b)
+})
+
+const currentSentence = computed(() => filteredSentences.value[currentIndex.value])
+
+// 监听课程变化，重置索引
+watch(() => settingsStore.currentLesson, () => {
+  currentIndex.value = 0
+  console.log('📚 切换到课程:', settingsStore.currentLesson === 0 ? '所有' : settingsStore.currentLesson)
+})
+
+// 设置面板控制
+const openSettings = () => {
+  console.log('⚙️ 打开设置面板')
+  showSettings.value = true
+}
+
+const closeSettings = () => {
+  console.log('⚙️ 关闭设置面板')
+  showSettings.value = false
+}
+
+const handleLessonChange = (lesson) => {
+  console.log('📚 课程已切换:', lesson)
+}
 
 const nextSentence = () => {
   console.log('➡️ 下一个句子')
-  if (currentIndex.value < sentences.value.length - 1) {
+  if (currentIndex.value < filteredSentences.value.length - 1) {
     currentIndex.value++
   } else {
     currentIndex.value = 0
@@ -49,7 +99,7 @@ const previousSentence = () => {
   if (currentIndex.value > 0) {
     currentIndex.value--
   } else {
-    currentIndex.value = sentences.value.length - 1
+    currentIndex.value = filteredSentences.value.length - 1
   }
 }
 
@@ -62,6 +112,7 @@ const speakSentence = () => {
 
 onMounted(() => {
   console.log('✅ 英语句子场景已挂载，共', sentences.value.length, '个句子')
+  console.log('📚 可用课程:', availableLessons.value)
 })
 </script>
 

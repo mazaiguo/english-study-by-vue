@@ -26,7 +26,7 @@ export function useGesture(options = {}) {
     onSwipeUp,
     onTap,
     minSwipeDistance = 100,
-    minUpSwipeDistance = 40, // 上滑的最小距离，进一步降低（从60改为40）
+    minUpSwipeDistance = 30, // 上滑的最小距离，优化为30px以提高灵敏度（iPhone友好）
     maxTapMovement = 10,
     maxTapDuration = 300,
     enableUpSwipe = false // 新增：是否启用上滑手势

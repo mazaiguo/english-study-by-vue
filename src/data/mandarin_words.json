@@ -7,7 +7,8 @@
       "translation": "hello",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_word_1.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "translation": "thank you",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_word_2.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "translation": "goodbye",
       "level": 1,
       "category": "greeting",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "mandarin_word_3.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "translation": "dad, father",
       "level": 1,
       "category": "family",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "mandarin_word_4.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "translation": "mom, mother",
       "level": 1,
       "category": "family",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "mandarin_word_5.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "translation": "apple",
       "level": 1,
       "category": "food",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_word_6.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "translation": "banana",
       "level": 1,
       "category": "food",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_word_7.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "translation": "water",
       "level": 1,
       "category": "food",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "mandarin_word_8.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "translation": "sun",
       "level": 1,
       "category": "nature",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_word_9.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "translation": "moon",
       "level": 1,
       "category": "nature",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_word_10.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "translation": "star",
       "level": 1,
       "category": "nature",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "mandarin_word_11.jpg"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "translation": "dog",
       "level": 1,
       "category": "animals",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "mandarin_word_12.jpg"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "translation": "cat",
       "level": 1,
       "category": "animals",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "mandarin_word_13.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "translation": "fish",
       "level": 1,
       "category": "animals",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "mandarin_word_14.jpg"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "translation": "book",
       "level": 1,
       "category": "objects",
-      "lesson": 6
+      "lesson": 6,
+      "imageFile": "mandarin_word_15.jpg"
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "translation": "pen",
       "level": 1,
       "category": "objects",
-      "lesson": 6
+      "lesson": 6,
+      "imageFile": "mandarin_word_16.jpg"
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "translation": "table",
       "level": 1,
       "category": "objects",
-      "lesson": 6
+      "lesson": 6,
+      "imageFile": "mandarin_word_17.jpg"
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "translation": "red",
       "level": 1,
       "category": "colors",
-      "lesson": 7
+      "lesson": 7,
+      "imageFile": "mandarin_word_18.jpg"
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "translation": "blue",
       "level": 1,
       "category": "colors",
-      "lesson": 7
+      "lesson": 7,
+      "imageFile": "mandarin_word_19.jpg"
     },
     {
       "id": 20,
@@ -178,8 +197,8 @@
       "translation": "yellow",
       "level": 1,
       "category": "colors",
-      "lesson": 7
+      "lesson": 7,
+      "imageFile": "mandarin_word_20.jpg"
     }
   ]
 }
-

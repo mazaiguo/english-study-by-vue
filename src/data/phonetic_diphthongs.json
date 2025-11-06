@@ -8,7 +8,8 @@
       "examplePhonetic": "/deɪ/",
       "category": "双元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "examplePhonetic": "/maɪ/",
       "category": "双元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_2.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "examplePhonetic": "/bɔɪ/",
       "category": "双元音",
       "difficulty": "medium",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_3.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "examplePhonetic": "/haʊ/",
       "category": "双元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_4.jpg"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "examplePhonetic": "/ɡoʊ/",
       "category": "双元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_5.jpg"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "examplePhonetic": "/hɪər/",
       "category": "双元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_6.jpg"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "examplePhonetic": "/heər/",
       "category": "双元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_7.jpg"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "examplePhonetic": "/tʊər/",
       "category": "双元音",
       "difficulty": "hard",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_8.jpg"
     }
   ]
 }

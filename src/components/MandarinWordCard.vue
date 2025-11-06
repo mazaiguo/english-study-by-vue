@@ -24,6 +24,16 @@
       {{ word.translation }}
     </div>
 
+    <!-- 图片 -->
+    <div v-if="word.imageFile" class="image-container">
+      <img
+        :src="getImageUrl(word.imageFile)"
+        :alt="word.hanzi"
+        class="word-image"
+        @error="handleImageError"
+      />
+    </div>
+
     <!-- 分类标签（可选） -->
     <div
       v-if="word.category"
@@ -41,6 +51,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
+import { getImageUrl, handleImageError } from '@/utils/imageLoader'
 
 const props = defineProps({
   word: {
@@ -72,26 +83,58 @@ const getCategoryName = (category) => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   position: relative;
 }
 
+.image-container {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.word-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.word-image.loading {
+  opacity: 0.5;
+}
+
+.word-image.loaded {
+  opacity: 1;
+}
+
+.word-image.image-error {
+  object-fit: contain;
+}
+
 .hanzi-text {
-  font-size: 160px; /* 从180px减少 */
+  font-size: 180px;
   font-weight: bold;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease;
-  line-height: 1.1; /* 从1.2减少 */
+  line-height: 1.2;
 }
 
 .pinyin-text {
-  font-size: 48px; /* 从56px减少 */
+  font-size: 56px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .translation-text {
-  font-size: 36px; /* 从44px减少 */
+  font-size: 44px;
   transition: color 0.3s ease;
 }
 
@@ -109,19 +152,66 @@ const getCategoryName = (category) => {
 /* 响应式设计 */
 @media (max-width: 768px) {
   .mandarin-word-card {
-    gap: 22px; /* 从30px减少 */
+    gap: 28px;
   }
 
   .hanzi-text {
-    font-size: 120px; /* 从140px减少 */
+    font-size: 140px;
   }
 
   .pinyin-text {
-    font-size: 36px; /* 从44px减少 */
+    font-size: 44px;
   }
 
   .translation-text {
-    font-size: 28px; /* 从36px减少 */
+    font-size: 36px;
+  }
+
+  .category-badge {
+    font-size: 17px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mandarin-word-card {
+    gap: 35px; /* 增大间距，让卡片更充实 */
+  }
+
+  .hanzi-text {
+    font-size: 130px; /* 增大字体 */
+  }
+
+  .pinyin-text {
+    font-size: 40px; /* 增大字体 */
+  }
+
+  .translation-text {
+    font-size: 32px; /* 增大字体 */
+  }
+
+  .category-badge {
+    font-size: 15px;
+    padding: 5px 12px;
+  }
+}
+
+/* iPhone 14 Pro Max 优化 (430px) */
+@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
+  .mandarin-word-card {
+    gap: 38px;
+  }
+
+  .hanzi-text {
+    font-size: 150px; /* Pro Max 更大屏幕 */
+  }
+
+  .pinyin-text {
+    font-size: 48px;
+  }
+
+  .translation-text {
+    font-size: 38px;
   }
 
   .category-badge {
@@ -130,49 +220,50 @@ const getCategoryName = (category) => {
   }
 }
 
-@media (max-width: 480px) {
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
+@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
   .mandarin-word-card {
-    gap: 16px; /* 从30px大幅减少 */
+    gap: 32px;
   }
 
   .hanzi-text {
-    font-size: 90px; /* 从100px减少 */
+    font-size: 125px; /* 基准字体大小 */
   }
 
   .pinyin-text {
-    font-size: 28px; /* 从32px减少 */
+    font-size: 40px;
   }
 
   .translation-text {
-    font-size: 22px; /* 从28px减少 */
+    font-size: 32px;
   }
 
   .category-badge {
-    font-size: 14px;
+    font-size: 15px;
     padding: 5px 12px;
   }
 }
 
-/* iPhone优化 */
-@media (max-width: 390px) {
+/* iPhone SE / 小屏手机 */
+@media (max-width: 375px) {
   .mandarin-word-card {
-    gap: 12px;
+    gap: 28px;
   }
 
   .hanzi-text {
-    font-size: 75px;
+    font-size: 105px;
   }
 
   .pinyin-text {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   .translation-text {
-    font-size: 18px;
+    font-size: 27px;
   }
 
   .category-badge {
-    font-size: 13px;
+    font-size: 14px;
     padding: 4px 10px;
   }
 }

@@ -8,7 +8,8 @@
       "exampleCharacter": "妈",
       "meaning": "mother",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_tone_1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "exampleCharacter": "麻",
       "meaning": "hemp",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_tone_2.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "exampleCharacter": "马",
       "meaning": "horse",
       "difficulty": "medium",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_tone_3.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "exampleCharacter": "骂",
       "meaning": "scold",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_tone_4.jpg"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "exampleCharacter": "八",
       "meaning": "eight",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "pinyin_tone_5.jpg"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "exampleCharacter": "拔",
       "meaning": "pull",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_tone_6.jpg"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "exampleCharacter": "把",
       "meaning": "handle",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_tone_7.jpg"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "exampleCharacter": "爸",
       "meaning": "dad",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_tone_8.jpg"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "exampleCharacter": "搭",
       "meaning": "build",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_tone_9.jpg"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "exampleCharacter": "达",
       "meaning": "reach",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "pinyin_tone_10.jpg"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "exampleCharacter": "打",
       "meaning": "hit",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_tone_11.jpg"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "exampleCharacter": "大",
       "meaning": "big",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_tone_12.jpg"
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "exampleCharacter": "他",
       "meaning": "he",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_tone_13.jpg"
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "exampleCharacter": "踏",
       "meaning": "step",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_tone_14.jpg"
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "exampleCharacter": "塔",
       "meaning": "tower",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "pinyin_tone_15.jpg"
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "exampleCharacter": "踏",
       "meaning": "step on",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_tone_16.jpg"
     },
     {
       "id": 17,
@@ -168,7 +184,8 @@
       "exampleCharacter": "师",
       "meaning": "teacher",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_tone_17.jpg"
     },
     {
       "id": 18,
@@ -178,7 +195,8 @@
       "exampleCharacter": "十",
       "meaning": "ten",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_tone_18.jpg"
     },
     {
       "id": 19,
@@ -188,7 +206,8 @@
       "exampleCharacter": "使",
       "meaning": "use",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_tone_19.jpg"
     },
     {
       "id": 20,
@@ -198,7 +217,8 @@
       "exampleCharacter": "是",
       "meaning": "is",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "pinyin_tone_20.jpg"
     }
   ]
 }

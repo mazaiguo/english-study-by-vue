@@ -8,7 +8,8 @@
       "examplePhonetic": "/siː/",
       "category": "长元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_vowel_1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "examplePhonetic": "/sɪt/",
       "category": "短元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_vowel_2.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "examplePhonetic": "/kæt/",
       "category": "短元音",
       "difficulty": "medium",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_vowel_3.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "examplePhonetic": "/bed/",
       "category": "短元音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_vowel_4.jpg"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "examplePhonetic": "/bɜːrd/",
       "category": "长元音",
       "difficulty": "hard",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_vowel_5.jpg"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "examplePhonetic": "/əˈbaʊt/",
       "category": "短元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_vowel_6.jpg"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "examplePhonetic": "/kʌp/",
       "category": "短元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_vowel_7.jpg"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "examplePhonetic": "/kɑːr/",
       "category": "长元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_vowel_8.jpg"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "examplePhonetic": "/dɔːr/",
       "category": "长元音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_vowel_9.jpg"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "examplePhonetic": "/bʊk/",
       "category": "短元音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_vowel_10.jpg"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "examplePhonetic": "/fuːd/",
       "category": "长元音",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_vowel_11.jpg"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "examplePhonetic": "/hɒt/",
       "category": "短元音",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_vowel_12.jpg"
     }
   ]
 }

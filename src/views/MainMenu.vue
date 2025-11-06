@@ -33,7 +33,7 @@
       <!-- 英语学习 -->
       <div class="module-section">
         <h2 class="section-title" :style="{ color: theme.colors.englishPrimary }">
-          🅰️ 英语学习 English
+          🅰️ 英语学习
         </h2>
         <div class="button-group">
           <button
@@ -106,7 +106,7 @@
       <!-- 普通话学习 -->
       <div class="module-section">
         <h2 class="section-title" :style="{ color: theme.colors.mandarinPrimary }">
-          🀄 普通话学习 Mandarin
+          🀄 普通话学习
         </h2>
         <div class="button-group">
           <button
@@ -276,10 +276,10 @@ onMounted(() => {
 
 .modules-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr; /* 固定两列，左右分布 */
+  gap: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-bottom: 40px;
 }
 
@@ -295,12 +295,17 @@ onMounted(() => {
   text-align: center;
   margin-bottom: 10px;
   transition: color 0.3s ease;
+  min-height: 50px; /* 确保标题高度一致 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-group {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr); /* 5行，高度相等 */
   gap: 15px;
+  align-content: start;
 }
 
 .module-button {
@@ -311,12 +316,14 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border: none;
   outline: none;
+  min-height: 140px; /* 确保按钮最小高度一致 */
 }
 
 .module-button:hover {
@@ -359,59 +366,144 @@ onMounted(() => {
   transition: color 0.3s ease;
 }
 
-/* 响应式设计 */
+/* 响应式设计 - 保持左右分列 */
 @media (max-width: 768px) {
   .title {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .modules-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr; /* 保持两列 */
+    gap: 20px;
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: 24px;
+    min-height: 40px;
   }
 
   .module-button {
-    padding: 20px;
+    padding: 16px 12px;
+    min-height: 120px;
   }
 
   .button-icon {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .button-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .button-subtitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .gesture-hint {
-    font-size: 16px;
-    padding: 12px 20px;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }
 
 @media (max-width: 480px) {
   .main-menu {
-    padding: 20px 15px;
+    padding: 15px 8px;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 15px;
   }
 
   .theme-dropdown {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .title-section {
+    margin-bottom: 25px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr 1fr; /* 保持两列 */
+    gap: 12px;
   }
 
   .section-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    min-height: 35px;
+  }
+
+  .button-group {
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .module-button {
+    padding: 14px 8px;
+    min-height: 100px;
+  }
+
+  .button-icon {
+    font-size: 28px;
+  }
+
+  .button-title {
+    font-size: 16px;
+  }
+
+  .button-subtitle {
+    font-size: 12px;
+  }
+
+  .gesture-hint {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin: 20px 0;
+  }
+
+  .version {
+    font-size: 12px;
+  }
+}
+
+/* iPhone专属优化 - 保持左右分列 */
+@media (max-width: 390px) and (min-height: 800px) {
+  .main-menu {
+    padding: 12px 6px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr 1fr; /* 保持两列 */
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    min-height: 30px;
+  }
+
+  .module-button {
+    padding: 12px 6px;
+    border-radius: 15px;
+    min-height: 90px;
+  }
+
+  .button-icon {
     font-size: 24px;
+  }
+
+  .button-title {
+    font-size: 14px;
+  }
+
+  .button-subtitle {
+    font-size: 11px;
   }
 }
 </style>

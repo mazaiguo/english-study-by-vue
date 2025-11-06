@@ -106,7 +106,8 @@ const {
 .learning-card-container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh; /* 固定高度，防止滚动条 */
+  overflow: hidden; /* 禁用滚动 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,9 +150,9 @@ const {
   position: relative;
   width: 90%;
   max-width: 1000px;
-  min-height: 500px; /* 从600px减少到500px */
-  margin: 20px auto; /* 从40px减少到20px */
-  padding: 50px 40px; /* 从60px减少到50px */
+  min-height: 600px;
+  margin: 20px auto;
+  padding: 50px 40px;
   border-radius: 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -196,10 +197,10 @@ const {
 /* 响应式设计 */
 @media (max-width: 768px) {
   .learning-card {
-    width: 95%;
-    min-height: 420px; /* 从500px减少 */
-    padding: 35px 25px; /* 减少padding */
-    margin: 15px auto;
+    width: 96%;
+    min-height: 520px;
+    padding: 40px 25px;
+    margin: 10px auto;
   }
 
   .index-text {
@@ -223,22 +224,102 @@ const {
   }
 }
 
-@media (max-width: 480px) {
+/* iPhone 14 Pro Max 优化 (430px x 932px) */
+@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
+  .learning-card-container {
+    padding: 0;
+  }
+  
   .learning-card {
-    width: 92%;
-    padding: 30px 18px; /* 进一步减少 */
-    min-height: 350px; /* 从450px大幅减少 */
+    width: 96%;
+    min-height: calc(100vh - 100px); /* 留更多边距 */
+    padding: 50px 25px;
     margin: 10px auto;
+    border-radius: 20px;
   }
 
   .index-text {
-    font-size: 22px;
-    top: 12px;
-    right: 18px;
+    font-size: 26px;
+    top: 18px;
+    right: 25px;
+  }
+
+  .gesture-hint {
+    font-size: 14px;
+    padding: 8px 16px;
+    bottom: 18px;
+  }
+  
+  .content-area {
+    gap: 30px;
+  }
+  
+  .home-button {
+    width: 46px;
+    height: 46px;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+  }
+}
+
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px x 844-852px) - 基准布局 */
+@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
+  .learning-card-container {
+    padding: 0;
+  }
+  
+  .learning-card {
+    width: 97%;
+    min-height: calc(100vh - 90px); /* 适中的边距 */
+    padding: 45px 20px;
+    margin: 5px auto;
+    border-radius: 18px;
+  }
+
+  .index-text {
+    font-size: 24px;
+    top: 16px;
+    right: 22px;
   }
 
   .gesture-hint {
     font-size: 13px;
+    padding: 7px 14px;
+    bottom: 14px;
+  }
+  
+  .content-area {
+    gap: 28px;
+  }
+  
+  .home-button {
+    width: 44px;
+    height: 44px;
+    top: 12px;
+    left: 12px;
+    font-size: 19px;
+  }
+}
+
+/* iPhone SE / 小屏手机 */
+@media (max-width: 375px) {
+  .learning-card {
+    width: 97%;
+    min-height: calc(100vh - 90px);
+    padding: 35px 15px;
+    margin: 5px auto;
+    border-radius: 16px;
+  }
+  
+  .index-text {
+    font-size: 22px;
+    top: 14px;
+    right: 18px;
+  }
+
+  .gesture-hint {
+    font-size: 12px;
     padding: 6px 12px;
     bottom: 12px;
   }
@@ -246,57 +327,9 @@ const {
   .home-button {
     width: 40px;
     height: 40px;
-    top: 12px;
-    left: 12px;
-    font-size: 18px;
-  }
-}
-
-/* iPhone专属优化 (iPhone 12/13/14系列) */
-@media (max-width: 390px) and (min-height: 800px) {
-  .learning-card-container {
-    padding: 10px 0;
-  }
-  
-  .learning-card {
-    width: 90%;
-    min-height: 320px; /* 大幅减少高度 */
-    padding: 25px 15px; /* 最小化padding */
-    margin: 8px auto;
-  }
-
-  .index-text {
-    font-size: 20px;
-    top: 10px;
-    right: 15px;
-  }
-
-  .gesture-hint {
-    font-size: 12px;
-    padding: 5px 10px;
-    bottom: 10px;
-  }
-  
-  .content-area {
-    gap: 20px; /* 减少内容间距 */
-  }
-}
-
-/* iPhone SE / 小屏手机 */
-@media (max-width: 375px) {
-  .learning-card {
-    width: 88%;
-    min-height: 300px;
-    padding: 22px 12px;
-    margin: 5px auto;
-  }
-  
-  .home-button {
-    width: 38px;
-    height: 38px;
     top: 10px;
     left: 10px;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 </style>

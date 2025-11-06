@@ -8,7 +8,8 @@
       "examplePhonetic": "/pen/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "examplePhonetic": "/bed/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_2.jpg"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "examplePhonetic": "/tiː/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_3.jpg"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "examplePhonetic": "/dɔːɡ/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_4.jpg"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "examplePhonetic": "/kæt/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 1
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_5.jpg"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "examplePhonetic": "/ɡoʊ/",
       "category": "塞音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_6.jpg"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "examplePhonetic": "/fɪʃ/",
       "category": "擦音",
       "difficulty": "easy",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_7.jpg"
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "examplePhonetic": "/ˈveri/",
       "category": "擦音",
       "difficulty": "medium",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_8.jpg"
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "examplePhonetic": "/θɪŋk/",
       "category": "擦音",
       "difficulty": "hard",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_9.jpg"
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "examplePhonetic": "/ðɪs/",
       "category": "擦音",
       "difficulty": "hard",
-      "lesson": 2
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_10.jpg"
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "examplePhonetic": "/siː/",
       "category": "擦音",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_11.jpg"
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "examplePhonetic": "/zuː/",
       "category": "擦音",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_12.jpg"
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "examplePhonetic": "/ʃɪp/",
       "category": "擦音",
       "difficulty": "medium",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_13.jpg"
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "examplePhonetic": "/ˈvɪʒən/",
       "category": "擦音",
       "difficulty": "hard",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_14.jpg"
     },
     {
       "id": 15,
@@ -148,7 +162,8 @@
       "examplePhonetic": "/hæt/",
       "category": "擦音",
       "difficulty": "easy",
-      "lesson": 3
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_15.jpg"
     },
     {
       "id": 16,
@@ -158,7 +173,8 @@
       "examplePhonetic": "/mæn/",
       "category": "鼻音",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_16.jpg"
     },
     {
       "id": 17,
@@ -168,7 +184,8 @@
       "examplePhonetic": "/noʊ/",
       "category": "鼻音",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_17.jpg"
     },
     {
       "id": 18,
@@ -178,7 +195,8 @@
       "examplePhonetic": "/sɪŋ/",
       "category": "鼻音",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_18.jpg"
     },
     {
       "id": 19,
@@ -188,7 +206,8 @@
       "examplePhonetic": "/leɡ/",
       "category": "边音",
       "difficulty": "easy",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_19.jpg"
     },
     {
       "id": 20,
@@ -198,7 +217,8 @@
       "examplePhonetic": "/red/",
       "category": "近音",
       "difficulty": "medium",
-      "lesson": 4
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_20.jpg"
     },
     {
       "id": 21,
@@ -208,7 +228,8 @@
       "examplePhonetic": "/jes/",
       "category": "近音",
       "difficulty": "medium",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_21.jpg"
     },
     {
       "id": 22,
@@ -218,7 +239,8 @@
       "examplePhonetic": "/wiː/",
       "category": "近音",
       "difficulty": "easy",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_22.jpg"
     },
     {
       "id": 23,
@@ -228,7 +250,8 @@
       "examplePhonetic": "/tʃer/",
       "category": "塞擦音",
       "difficulty": "medium",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_23.jpg"
     },
     {
       "id": 24,
@@ -238,7 +261,8 @@
       "examplePhonetic": "/dʒʌmp/",
       "category": "塞擦音",
       "difficulty": "medium",
-      "lesson": 5
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_24.jpg"
     }
   ]
 }
