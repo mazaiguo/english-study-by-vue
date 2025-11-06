@@ -112,14 +112,15 @@ export function useGesture(options = {}) {
         }
       }
     } else {
-      // 垂直滑动
-      // 下滑需要更大的距离，上滑距离可以更短
-      if (deltaY > 0 && absY >= minSwipeDistance && onSwipeDown) {
-        if (DEBUG) console.log('👇 下滑 - 返回主菜单')
-        onSwipeDown()
-      } else if (deltaY < 0 && absY >= minUpSwipeDistance && enableUpSwipe && onSwipeUp) {
-        if (DEBUG) console.log('👆 上滑 - 打开设置')
-        onSwipeUp()
+      // 垂直滑动 - 上滑和下滑都打开设置
+      if (absY >= minUpSwipeDistance) {
+        if (deltaY < 0 && enableUpSwipe && onSwipeUp) {
+          if (DEBUG) console.log('👆 上滑 - 打开设置')
+          onSwipeUp()
+        } else if (deltaY > 0 && enableUpSwipe && onSwipeDown) {
+          if (DEBUG) console.log('👇 下滑 - 打开设置')
+          onSwipeDown()
+        }
       }
     }
   }
@@ -193,13 +194,15 @@ export function useGesture(options = {}) {
         }
       }
     } else {
-      // 下滑需要更大的距离，上滑距离可以更短
-      if (deltaY > 0 && absY >= minSwipeDistance && onSwipeDown) {
-        if (DEBUG) console.log('👇 鼠标下滑 - 返回主菜单')
-        onSwipeDown()
-      } else if (deltaY < 0 && absY >= minUpSwipeDistance && enableUpSwipe && onSwipeUp) {
-        if (DEBUG) console.log('👆 鼠标上滑 - 打开设置')
-        onSwipeUp()
+      // 垂直滑动 - 上滑和下滑都打开设置
+      if (absY >= minUpSwipeDistance) {
+        if (deltaY < 0 && enableUpSwipe && onSwipeUp) {
+          if (DEBUG) console.log('👆 鼠标上滑 - 打开设置')
+          onSwipeUp()
+        } else if (deltaY > 0 && enableUpSwipe && onSwipeDown) {
+          if (DEBUG) console.log('👇 鼠标下滑 - 打开设置')
+          onSwipeDown()
+        }
       }
     }
   }

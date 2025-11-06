@@ -77,21 +77,21 @@ const getCategoryName = (category) => {
 }
 
 .hanzi-text {
-  font-size: 180px;
+  font-size: 160px; /* 从180px减少 */
   font-weight: bold;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease;
-  line-height: 1.2;
+  line-height: 1.1; /* 从1.2减少 */
 }
 
 .pinyin-text {
-  font-size: 56px;
+  font-size: 48px; /* 从56px减少 */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .translation-text {
-  font-size: 44px;
+  font-size: 36px; /* 从44px减少 */
   transition: color 0.3s ease;
 }
 
@@ -108,40 +108,72 @@ const getCategoryName = (category) => {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  .mandarin-word-card {
+    gap: 22px; /* 从30px减少 */
+  }
+
   .hanzi-text {
-    font-size: 140px;
+    font-size: 120px; /* 从140px减少 */
   }
 
   .pinyin-text {
-    font-size: 44px;
+    font-size: 36px; /* 从44px减少 */
   }
 
   .translation-text {
-    font-size: 36px;
-  }
-
-  .category-badge {
-    font-size: 18px;
-    padding: 6px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hanzi-text {
-    font-size: 100px;
-  }
-
-  .pinyin-text {
-    font-size: 32px;
-  }
-
-  .translation-text {
-    font-size: 28px;
+    font-size: 28px; /* 从36px减少 */
   }
 
   .category-badge {
     font-size: 16px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mandarin-word-card {
+    gap: 16px; /* 从30px大幅减少 */
+  }
+
+  .hanzi-text {
+    font-size: 90px; /* 从100px减少 */
+  }
+
+  .pinyin-text {
+    font-size: 28px; /* 从32px减少 */
+  }
+
+  .translation-text {
+    font-size: 22px; /* 从28px减少 */
+  }
+
+  .category-badge {
+    font-size: 14px;
     padding: 5px 12px;
+  }
+}
+
+/* iPhone优化 */
+@media (max-width: 390px) {
+  .mandarin-word-card {
+    gap: 12px;
+  }
+
+  .hanzi-text {
+    font-size: 75px;
+  }
+
+  .pinyin-text {
+    font-size: 24px;
+  }
+
+  .translation-text {
+    font-size: 18px;
+  }
+
+  .category-badge {
+    font-size: 13px;
+    padding: 4px 10px;
   }
 }
 </style>
