@@ -1,0 +1,140 @@
+{
+  "sentences": [
+    {
+      "id": 1,
+      "hanzi": "你好吗？",
+      "pinyin": "nǐ hǎo ma?",
+      "translation": "How are you?",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 2,
+      "hanzi": "我很好。",
+      "pinyin": "wǒ hěn hǎo.",
+      "translation": "I'm fine.",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 3,
+      "hanzi": "早上好！",
+      "pinyin": "zǎo shang hǎo!",
+      "translation": "Good morning!",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 4,
+      "hanzi": "晚安。",
+      "pinyin": "wǎn ān.",
+      "translation": "Good night.",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 5,
+      "hanzi": "我爱你。",
+      "pinyin": "wǒ ài nǐ.",
+      "translation": "I love you.",
+      "category": "emotion",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 6,
+      "hanzi": "我饿了。",
+      "pinyin": "wǒ è le.",
+      "translation": "I'm hungry.",
+      "category": "daily",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 7,
+      "hanzi": "我渴了。",
+      "pinyin": "wǒ kě le.",
+      "translation": "I'm thirsty.",
+      "category": "daily",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 8,
+      "hanzi": "这是什么？",
+      "pinyin": "zhè shì shén me?",
+      "translation": "What is this?",
+      "category": "question",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 9,
+      "hanzi": "那是一本书。",
+      "pinyin": "nà shì yì běn shū.",
+      "translation": "That is a book.",
+      "category": "answer",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 10,
+      "hanzi": "我喜欢苹果。",
+      "pinyin": "wǒ xǐ huan píng guǒ.",
+      "translation": "I like apples.",
+      "category": "preference",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 11,
+      "hanzi": "今天天气很好。",
+      "pinyin": "jīn tiān tiān qì hěn hǎo.",
+      "translation": "The weather is nice today.",
+      "category": "weather",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 12,
+      "hanzi": "我在学习。",
+      "pinyin": "wǒ zài xué xí.",
+      "translation": "I am studying.",
+      "category": "activity",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 13,
+      "hanzi": "请帮帮我。",
+      "pinyin": "qǐng bāng bang wǒ.",
+      "translation": "Please help me.",
+      "category": "request",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 14,
+      "hanzi": "对不起。",
+      "pinyin": "duì bu qǐ.",
+      "translation": "I'm sorry.",
+      "category": "apology",
+      "difficulty": "easy",
+      "lesson": 5
+    },
+    {
+      "id": 15,
+      "hanzi": "没关系。",
+      "pinyin": "méi guān xi.",
+      "translation": "It's okay.",
+      "category": "response",
+      "difficulty": "easy",
+      "lesson": 5
+    }
+  ]
+}
+

@@ -1,0 +1,244 @@
+{
+  "finals": [
+    {
+      "id": 1,
+      "pinyin": "a",
+      "description": "单韵母，舌位低",
+      "exampleCharacter": "啊",
+      "examplePinyin": "ā",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 2,
+      "pinyin": "o",
+      "description": "单韵母，圆唇",
+      "exampleCharacter": "噢",
+      "examplePinyin": "ō",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 3,
+      "pinyin": "e",
+      "description": "单韵母，舌位中",
+      "exampleCharacter": "鹅",
+      "examplePinyin": "é",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 4,
+      "pinyin": "i",
+      "description": "单韵母，舌位高前",
+      "exampleCharacter": "衣",
+      "examplePinyin": "yī",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 5,
+      "pinyin": "u",
+      "description": "单韵母，舌位高后圆唇",
+      "exampleCharacter": "乌",
+      "examplePinyin": "wū",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 6,
+      "pinyin": "ü",
+      "description": "单韵母，舌位高前圆唇",
+      "exampleCharacter": "鱼",
+      "examplePinyin": "yú",
+      "category": "单韵母",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 7,
+      "pinyin": "ai",
+      "description": "复韵母",
+      "exampleCharacter": "爱",
+      "examplePinyin": "ài",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 8,
+      "pinyin": "ei",
+      "description": "复韵母",
+      "exampleCharacter": "诶",
+      "examplePinyin": "ēi",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 9,
+      "pinyin": "ui",
+      "description": "复韵母",
+      "exampleCharacter": "威",
+      "examplePinyin": "wēi",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 10,
+      "pinyin": "ao",
+      "description": "复韵母",
+      "exampleCharacter": "熬",
+      "examplePinyin": "áo",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 11,
+      "pinyin": "ou",
+      "description": "复韵母",
+      "exampleCharacter": "欧",
+      "examplePinyin": "ōu",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 12,
+      "pinyin": "iu",
+      "description": "复韵母",
+      "exampleCharacter": "优",
+      "examplePinyin": "yōu",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 13,
+      "pinyin": "ie",
+      "description": "复韵母",
+      "exampleCharacter": "耶",
+      "examplePinyin": "yē",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 14,
+      "pinyin": "üe",
+      "description": "复韵母",
+      "exampleCharacter": "月",
+      "examplePinyin": "yuè",
+      "category": "复韵母",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 15,
+      "pinyin": "an",
+      "description": "前鼻韵母",
+      "exampleCharacter": "安",
+      "examplePinyin": "ān",
+      "category": "鼻韵母",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 16,
+      "pinyin": "en",
+      "description": "前鼻韵母",
+      "exampleCharacter": "恩",
+      "examplePinyin": "ēn",
+      "category": "鼻韵母",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 17,
+      "pinyin": "in",
+      "description": "前鼻韵母",
+      "exampleCharacter": "因",
+      "examplePinyin": "yīn",
+      "category": "鼻韵母",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 18,
+      "pinyin": "un",
+      "description": "前鼻韵母",
+      "exampleCharacter": "温",
+      "examplePinyin": "wēn",
+      "category": "鼻韵母",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 19,
+      "pinyin": "ün",
+      "description": "前鼻韵母",
+      "exampleCharacter": "晕",
+      "examplePinyin": "yūn",
+      "category": "鼻韵母",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 20,
+      "pinyin": "ang",
+      "description": "后鼻韵母",
+      "exampleCharacter": "昂",
+      "examplePinyin": "áng",
+      "category": "鼻韵母",
+      "difficulty": "hard",
+      "lesson": 4
+    },
+    {
+      "id": 21,
+      "pinyin": "eng",
+      "description": "后鼻韵母",
+      "exampleCharacter": "亨",
+      "examplePinyin": "hēng",
+      "category": "鼻韵母",
+      "difficulty": "hard",
+      "lesson": 5
+    },
+    {
+      "id": 22,
+      "pinyin": "ing",
+      "description": "后鼻韵母",
+      "exampleCharacter": "英",
+      "examplePinyin": "yīng",
+      "category": "鼻韵母",
+      "difficulty": "hard",
+      "lesson": 5
+    },
+    {
+      "id": 23,
+      "pinyin": "ong",
+      "description": "后鼻韵母",
+      "exampleCharacter": "翁",
+      "examplePinyin": "wēng",
+      "category": "鼻韵母",
+      "difficulty": "hard",
+      "lesson": 5
+    },
+    {
+      "id": 24,
+      "pinyin": "er",
+      "description": "特殊韵母",
+      "exampleCharacter": "儿",
+      "examplePinyin": "ér",
+      "category": "特殊韵母",
+      "difficulty": "medium",
+      "lesson": 5
+    }
+  ]
+}

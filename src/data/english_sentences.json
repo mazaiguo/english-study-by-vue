@@ -1,0 +1,139 @@
+{
+  "sentences": [
+    {
+      "id": 1,
+      "sentence": "Hello, how are you?",
+      "phonetic": "/həˈloʊ, haʊ ɑːr juː/",
+      "translation": "你好，你好吗？",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 2,
+      "sentence": "I am fine, thank you.",
+      "phonetic": "/aɪ æm faɪn, θæŋk juː/",
+      "translation": "我很好，谢谢你。",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 3,
+      "sentence": "Good morning!",
+      "phonetic": "/ɡʊd ˈmɔːrnɪŋ/",
+      "translation": "早上好！",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 4,
+      "sentence": "Good night.",
+      "phonetic": "/ɡʊd naɪt/",
+      "translation": "晚安。",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 5,
+      "sentence": "I love you.",
+      "phonetic": "/aɪ lʌv juː/",
+      "translation": "我爱你。",
+      "category": "emotion",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 6,
+      "sentence": "What is this?",
+      "phonetic": "/wʌt ɪz ðɪs/",
+      "translation": "这是什么？",
+      "category": "question",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 7,
+      "sentence": "This is a book.",
+      "phonetic": "/ðɪs ɪz ə bʊk/",
+      "translation": "这是一本书。",
+      "category": "answer",
+      "difficulty": "easy",
+      "lesson": 3
+    },
+    {
+      "id": 8,
+      "sentence": "I like apples.",
+      "phonetic": "/aɪ laɪk ˈæplz/",
+      "translation": "我喜欢苹果。",
+      "category": "preference",
+      "difficulty": "easy",
+      "lesson": 3
+    },
+    {
+      "id": 9,
+      "sentence": "The weather is nice today.",
+      "phonetic": "/ðə ˈweðər ɪz naɪs təˈdeɪ/",
+      "translation": "今天天气很好。",
+      "category": "weather",
+      "difficulty": "medium",
+      "lesson": 3
+    },
+    {
+      "id": 10,
+      "sentence": "I am studying.",
+      "phonetic": "/aɪ æm ˈstʌdiɪŋ/",
+      "translation": "我在学习。",
+      "category": "activity",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 11,
+      "sentence": "Please help me.",
+      "phonetic": "/pliːz help miː/",
+      "translation": "请帮帮我。",
+      "category": "request",
+      "difficulty": "medium",
+      "lesson": 4
+    },
+    {
+      "id": 12,
+      "sentence": "I am hungry.",
+      "phonetic": "/aɪ æm ˈhʌŋɡri/",
+      "translation": "我饿了。",
+      "category": "feeling",
+      "difficulty": "easy",
+      "lesson": 4
+    },
+    {
+      "id": 13,
+      "sentence": "Can I have some water?",
+      "phonetic": "/kæn aɪ hæv sʌm ˈwɔːtər/",
+      "translation": "我可以要些水吗？",
+      "category": "request",
+      "difficulty": "medium",
+      "lesson": 5
+    },
+    {
+      "id": 14,
+      "sentence": "I'm sorry.",
+      "phonetic": "/aɪm ˈsɑːri/",
+      "translation": "对不起。",
+      "category": "apology",
+      "difficulty": "easy",
+      "lesson": 5
+    },
+    {
+      "id": 15,
+      "sentence": "It's okay.",
+      "phonetic": "/ɪts oʊˈkeɪ/",
+      "translation": "没关系。",
+      "category": "response",
+      "difficulty": "easy",
+      "lesson": 5
+    }
+  ]
+}

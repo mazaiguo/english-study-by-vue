@@ -1,0 +1,124 @@
+{
+  "vowels": [
+    {
+      "id": 1,
+      "symbol": "/iː/",
+      "description": "长元音，舌位高前",
+      "exampleWord": "see",
+      "examplePhonetic": "/siː/",
+      "category": "长元音",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 2,
+      "symbol": "/ɪ/",
+      "description": "短元音，舌位高前",
+      "exampleWord": "sit",
+      "examplePhonetic": "/sɪt/",
+      "category": "短元音",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 3,
+      "symbol": "/æ/",
+      "description": "短元音，舌位低前",
+      "exampleWord": "cat",
+      "examplePhonetic": "/kæt/",
+      "category": "短元音",
+      "difficulty": "medium",
+      "lesson": 1
+    },
+    {
+      "id": 4,
+      "symbol": "/e/",
+      "description": "短元音，舌位中前",
+      "exampleWord": "bed",
+      "examplePhonetic": "/bed/",
+      "category": "短元音",
+      "difficulty": "easy",
+      "lesson": 1
+    },
+    {
+      "id": 5,
+      "symbol": "/ɜː/",
+      "description": "长元音，舌位中",
+      "exampleWord": "bird",
+      "examplePhonetic": "/bɜːrd/",
+      "category": "长元音",
+      "difficulty": "hard",
+      "lesson": 1
+    },
+    {
+      "id": 6,
+      "symbol": "/ə/",
+      "description": "短元音，中性元音",
+      "exampleWord": "about",
+      "examplePhonetic": "/əˈbaʊt/",
+      "category": "短元音",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 7,
+      "symbol": "/ʌ/",
+      "description": "短元音，舌位中后",
+      "exampleWord": "cup",
+      "examplePhonetic": "/kʌp/",
+      "category": "短元音",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 8,
+      "symbol": "/ɑː/",
+      "description": "长元音，舌位低后",
+      "exampleWord": "car",
+      "examplePhonetic": "/kɑːr/",
+      "category": "长元音",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 9,
+      "symbol": "/ɔː/",
+      "description": "长元音，舌位中后圆唇",
+      "exampleWord": "door",
+      "examplePhonetic": "/dɔːr/",
+      "category": "长元音",
+      "difficulty": "medium",
+      "lesson": 2
+    },
+    {
+      "id": 10,
+      "symbol": "/ʊ/",
+      "description": "短元音，舌位高后圆唇",
+      "exampleWord": "book",
+      "examplePhonetic": "/bʊk/",
+      "category": "短元音",
+      "difficulty": "easy",
+      "lesson": 2
+    },
+    {
+      "id": 11,
+      "symbol": "/uː/",
+      "description": "长元音，舌位高后圆唇",
+      "exampleWord": "food",
+      "examplePhonetic": "/fuːd/",
+      "category": "长元音",
+      "difficulty": "easy",
+      "lesson": 3
+    },
+    {
+      "id": 12,
+      "symbol": "/ɒ/",
+      "description": "短元音，舌位低后圆唇（英式）",
+      "exampleWord": "hot",
+      "examplePhonetic": "/hɒt/",
+      "category": "短元音",
+      "difficulty": "medium",
+      "lesson": 3
+    }
+  ]
+}

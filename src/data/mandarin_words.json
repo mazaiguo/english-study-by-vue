@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "translation": "hello",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1
+    },
+    {
+      "id": 2,
+      "hanzi": "谢谢",
+      "pinyin": "xiè xiè",
+      "translation": "thank you",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1
+    },
+    {
+      "id": 3,
+      "hanzi": "再见",
+      "pinyin": "zài jiàn",
+      "translation": "goodbye",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1
+    },
+    {
+      "id": 4,
+      "hanzi": "爸爸",
+      "pinyin": "bà ba",
+      "translation": "dad, father",
+      "level": 1,
+      "category": "family",
+      "lesson": 2
+    },
+    {
+      "id": 5,
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "translation": "mom, mother",
+      "level": 1,
+      "category": "family",
+      "lesson": 2
+    },
+    {
+      "id": 6,
+      "hanzi": "苹果",
+      "pinyin": "píng guǒ",
+      "translation": "apple",
+      "level": 1,
+      "category": "food",
+      "lesson": 3
+    },
+    {
+      "id": 7,
+      "hanzi": "香蕉",
+      "pinyin": "xiāng jiāo",
+      "translation": "banana",
+      "level": 1,
+      "category": "food",
+      "lesson": 3
+    },
+    {
+      "id": 8,
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "translation": "water",
+      "level": 1,
+      "category": "food",
+      "lesson": 3
+    },
+    {
+      "id": 9,
+      "hanzi": "太阳",
+      "pinyin": "tài yáng",
+      "translation": "sun",
+      "level": 1,
+      "category": "nature",
+      "lesson": 4
+    },
+    {
+      "id": 10,
+      "hanzi": "月亮",
+      "pinyin": "yuè liang",
+      "translation": "moon",
+      "level": 1,
+      "category": "nature",
+      "lesson": 4
+    },
+    {
+      "id": 11,
+      "hanzi": "星星",
+      "pinyin": "xīng xing",
+      "translation": "star",
+      "level": 1,
+      "category": "nature",
+      "lesson": 4
+    },
+    {
+      "id": 12,
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "translation": "dog",
+      "level": 1,
+      "category": "animals",
+      "lesson": 5
+    },
+    {
+      "id": 13,
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "translation": "cat",
+      "level": 1,
+      "category": "animals",
+      "lesson": 5
+    },
+    {
+      "id": 14,
+      "hanzi": "鱼",
+      "pinyin": "yú",
+      "translation": "fish",
+      "level": 1,
+      "category": "animals",
+      "lesson": 5
+    },
+    {
+      "id": 15,
+      "hanzi": "书",
+      "pinyin": "shū",
+      "translation": "book",
+      "level": 1,
+      "category": "objects",
+      "lesson": 6
+    },
+    {
+      "id": 16,
+      "hanzi": "笔",
+      "pinyin": "bǐ",
+      "translation": "pen",
+      "level": 1,
+      "category": "objects",
+      "lesson": 6
+    },
+    {
+      "id": 17,
+      "hanzi": "桌子",
+      "pinyin": "zhuō zi",
+      "translation": "table",
+      "level": 1,
+      "category": "objects",
+      "lesson": 6
+    },
+    {
+      "id": 18,
+      "hanzi": "红色",
+      "pinyin": "hóng sè",
+      "translation": "red",
+      "level": 1,
+      "category": "colors",
+      "lesson": 7
+    },
+    {
+      "id": 19,
+      "hanzi": "蓝色",
+      "pinyin": "lán sè",
+      "translation": "blue",
+      "level": 1,
+      "category": "colors",
+      "lesson": 7
+    },
+    {
+      "id": 20,
+      "hanzi": "黄色",
+      "pinyin": "huáng sè",
+      "translation": "yellow",
+      "level": 1,
+      "category": "colors",
+      "lesson": 7
+    }
+  ]
+}
+
