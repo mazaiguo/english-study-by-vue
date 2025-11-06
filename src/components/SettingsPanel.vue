@@ -97,12 +97,27 @@
           🔊 测试发音
         </button>
       </div>
+      
+      <!-- 返回主页按钮 -->
+      <div class="setting-group">
+        <button
+          class="home-button-panel"
+          :style="{
+            backgroundColor: theme.colors.accentYellow,
+            color: theme.colors.whiteText
+          }"
+          @click="goHome"
+        >
+          🏠 返回主页
+        </button>
+      </div>
     </div>
   </transition>
 </template>
 
 <script setup>
 import { ref, computed, watch } from 'vue'
+import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
 import { useSettingsStore } from '@/stores/settings'
 import { useTTS } from '@/composables/useTTS'
@@ -128,6 +143,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close', 'lessonChange'])
 
+const router = useRouter()
 const themeStore = useThemeStore()
 const settingsStore = useSettingsStore()
 const { speakEnglish, speakMandarin } = useTTS()
@@ -141,6 +157,11 @@ watch(() => settingsStore.speechRate, (newRate) => {
 
 const close = () => {
   emit('close')
+}
+
+const goHome = () => {
+  console.log('🏠 从设置面板返回主页')
+  router.push('/')
 }
 
 const selectLesson = (lesson) => {
@@ -337,6 +358,27 @@ const getAccentButtonStyle = (accent) => {
   transform: translateY(0);
 }
 
+.home-button-panel {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-button-panel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.home-button-panel:active {
+  transform: translateY(0);
+}
+
 /* 滑入动画 */
 .slide-up-enter-active,
 .slide-up-leave-active {
@@ -368,7 +410,8 @@ const getAccentButtonStyle = (accent) => {
     padding: 10px 18px;
   }
 
-  .test-button {
+  .test-button,
+  .home-button-panel {
     font-size: 20px;
     padding: 15px;
   }

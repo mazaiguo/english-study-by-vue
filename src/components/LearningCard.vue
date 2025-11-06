@@ -1,18 +1,5 @@
 <template>
   <div class="learning-card-container">
-    <!-- 返回主页按钮 -->
-    <button 
-      class="home-button"
-      :style="{ 
-        backgroundColor: theme.colors.accentBlue,
-        color: theme.colors.whiteText 
-      }"
-      @click="goHome"
-      aria-label="返回主页"
-    >
-      <span class="home-icon">🏠</span>
-    </button>
-
     <div
       class="learning-card no-select"
       :style="{
@@ -43,7 +30,6 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useRouter } from 'vue-router'
 import { useThemeStore } from '@/stores/theme'
 import { useGesture } from '@/composables/useGesture'
 
@@ -78,14 +64,8 @@ const props = defineProps({
   }
 })
 
-const router = useRouter()
 const themeStore = useThemeStore()
 const theme = computed(() => themeStore.currentTheme)
-
-const goHome = () => {
-  console.log('🏠 点击返回主菜单')
-  router.push('/')
-}
 
 const {
   handleTouchStart,
@@ -111,39 +91,6 @@ const {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* 返回主页按钮 */
-.home-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  font-size: 24px;
-}
-
-.home-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.home-button:active {
-  transform: scale(0.95);
-}
-
-.home-icon {
-  display: block;
-  line-height: 1;
 }
 
 .learning-card {
@@ -197,10 +144,11 @@ const {
 /* 响应式设计 */
 @media (max-width: 768px) {
   .learning-card {
-    width: 96%;
-    min-height: 520px;
-    padding: 40px 25px;
-    margin: 10px auto;
+    width: 98%;
+    min-height: calc(100vh - 40px);
+    padding: 40px 20px;
+    margin: 8px auto;
+    border-radius: 20px;
   }
 
   .index-text {
@@ -214,14 +162,6 @@ const {
     padding: 8px 18px;
     bottom: 18px;
   }
-  
-  .home-button {
-    width: 45px;
-    height: 45px;
-    top: 15px;
-    left: 15px;
-    font-size: 20px;
-  }
 }
 
 /* iPhone 14 Pro Max 优化 (430px x 932px) */
@@ -231,35 +171,27 @@ const {
   }
   
   .learning-card {
-    width: 96%;
-    min-height: calc(100vh - 100px); /* 留更多边距 */
-    padding: 50px 25px;
-    margin: 10px auto;
-    border-radius: 20px;
+    width: 98%;
+    min-height: calc(100vh - 20px);
+    padding: 45px 20px;
+    margin: 5px auto;
+    border-radius: 18px;
   }
 
   .index-text {
     font-size: 26px;
-    top: 18px;
-    right: 25px;
+    top: 16px;
+    right: 22px;
   }
 
   .gesture-hint {
     font-size: 14px;
-    padding: 8px 16px;
-    bottom: 18px;
+    padding: 7px 14px;
+    bottom: 16px;
   }
   
   .content-area {
-    gap: 30px;
-  }
-  
-  .home-button {
-    width: 46px;
-    height: 46px;
-    top: 15px;
-    left: 15px;
-    font-size: 20px;
+    gap: 28px;
   }
 }
 
@@ -270,66 +202,50 @@ const {
   }
   
   .learning-card {
-    width: 97%;
-    min-height: calc(100vh - 90px); /* 适中的边距 */
-    padding: 45px 20px;
+    width: 98%;
+    min-height: calc(100vh - 20px);
+    padding: 42px 18px;
     margin: 5px auto;
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .index-text {
     font-size: 24px;
-    top: 16px;
-    right: 22px;
+    top: 14px;
+    right: 20px;
   }
 
   .gesture-hint {
     font-size: 13px;
-    padding: 7px 14px;
+    padding: 6px 12px;
     bottom: 14px;
   }
   
   .content-area {
-    gap: 28px;
-  }
-  
-  .home-button {
-    width: 44px;
-    height: 44px;
-    top: 12px;
-    left: 12px;
-    font-size: 19px;
+    gap: 26px;
   }
 }
 
 /* iPhone SE / 小屏手机 */
 @media (max-width: 375px) {
   .learning-card {
-    width: 97%;
-    min-height: calc(100vh - 90px);
-    padding: 35px 15px;
+    width: 98%;
+    min-height: calc(100vh - 20px);
+    padding: 38px 16px;
     margin: 5px auto;
-    border-radius: 16px;
+    border-radius: 14px;
   }
   
   .index-text {
     font-size: 22px;
-    top: 14px;
+    top: 12px;
     right: 18px;
   }
 
   .gesture-hint {
     font-size: 12px;
-    padding: 6px 12px;
+    padding: 6px 10px;
     bottom: 12px;
-  }
-  
-  .home-button {
-    width: 40px;
-    height: 40px;
-    top: 10px;
-    left: 10px;
-    font-size: 17px;
   }
 }
 </style>

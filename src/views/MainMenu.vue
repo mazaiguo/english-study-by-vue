@@ -236,6 +236,7 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   transition: background-color 0.3s ease;
+  overflow-y: auto; /* 确保可以垂直滚动 */
 }
 
 .title-section {

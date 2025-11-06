@@ -1,6 +1,7 @@
 <template>
   <div class="scene-container" :style="{ backgroundColor: theme.colors.background }">
     <LearningCard
+      v-if="filteredWords.length > 0"
       :current-index="currentIndex"
       :total-items="filteredWords.length"
       :on-next="nextWord"
@@ -9,9 +10,25 @@
       :on-swipe-up="openSettings"
     >
       <template #content>
-        <MandarinWordCard :word="currentWord" />
+        <MandarinWordCard v-if="currentWord" :word="currentWord" />
       </template>
     </LearningCard>
+
+    <!-- 无数据提示 -->
+    <div v-else class="no-data-message" :style="{ color: theme.colors.primaryText }">
+      <div class="no-data-icon">📚</div>
+      <div class="no-data-text">当前课程没有单词数据</div>
+      <button
+        class="open-settings-btn"
+        :style="{
+          backgroundColor: theme.colors.accentBlue,
+          color: theme.colors.whiteText
+        }"
+        @click="openSettings"
+      >
+        打开设置选择其他课程
+      </button>
+    </div>
     
     <!-- 设置面板 -->
     <SettingsPanel
@@ -121,13 +138,48 @@ onMounted(() => {
 
 <style scoped>
 .scene-container {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   transition: background-color 0.3s ease;
+}
+
+.no-data-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.no-data-icon {
+  font-size: 80px;
+}
+
+.no-data-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.open-settings-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.open-settings-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 </style>
 

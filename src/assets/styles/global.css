@@ -8,9 +8,8 @@
 html,
 body {
   width: 100%;
-  height: 100%;
-  overflow: hidden; /* 完全禁用滚动条 */
-  position: fixed; /* 防止移动端滚动 */
+  min-height: 100%;
+  /* 移除 overflow: hidden 和 position: fixed，允许主页面滚动 */
 }
 
 body {

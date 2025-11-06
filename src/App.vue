@@ -27,8 +27,7 @@ onMounted(() => {
 <style scoped>
 #app {
   width: 100%;
-  height: 100vh; /* 固定高度，防止滚动条 */
-  overflow: hidden; /* 禁用滚动 */
+  min-height: 100vh;
   transition: background-color 0.3s ease;
 }
 
