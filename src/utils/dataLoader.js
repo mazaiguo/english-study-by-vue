@@ -6,10 +6,14 @@
 const DEBUG = true
 
 // 远程数据源配置
-// 开发环境使用代理路径（避免CORS），生产环境使用完整URL
+// 开发环境：通过Vite代理访问GitHub Pages（避免CORS）
+// 生产环境：使用部署在同域的public/data目录
 const REMOTE_BASE_URL = import.meta.env.DEV 
-  ? '/api/data'  // 开发环境：通过Vite代理
-  : 'https://mazaiguo.github.io/blogimg/english-study-data'  // 生产环境：直接访问
+  ? '/api/data'  // 开发环境：通过Vite代理访问远程
+  : '/data'  // 生产环境：使用public/data目录（同域，无CORS问题）
+
+// GitHub Pages备用地址（需要时手动切换）
+const GITHUB_PAGES_URL = 'https://mazaiguo.github.io/blogimg/english-study-data'
 
 // 数据文件映射
 const DATA_FILES = {

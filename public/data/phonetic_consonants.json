@@ -1,0 +1,268 @@
+{
+  "consonants": [
+    {
+      "id": 1,
+      "symbol": "/p/",
+      "description": "清双唇塞音",
+      "exampleWord": "pen",
+      "examplePhonetic": "/pen/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_1.jpg"
+    },
+    {
+      "id": 2,
+      "symbol": "/b/",
+      "description": "浊双唇塞音",
+      "exampleWord": "bed",
+      "examplePhonetic": "/bed/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_2.jpg"
+    },
+    {
+      "id": 3,
+      "symbol": "/t/",
+      "description": "清齿龈塞音",
+      "exampleWord": "tea",
+      "examplePhonetic": "/tiː/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_3.jpg"
+    },
+    {
+      "id": 4,
+      "symbol": "/d/",
+      "description": "浊齿龈塞音",
+      "exampleWord": "dog",
+      "examplePhonetic": "/dɔːɡ/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_4.jpg"
+    },
+    {
+      "id": 5,
+      "symbol": "/k/",
+      "description": "清软腭塞音",
+      "exampleWord": "cat",
+      "examplePhonetic": "/kæt/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_consonant_5.jpg"
+    },
+    {
+      "id": 6,
+      "symbol": "/ɡ/",
+      "description": "浊软腭塞音",
+      "exampleWord": "go",
+      "examplePhonetic": "/ɡoʊ/",
+      "category": "塞音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_6.jpg"
+    },
+    {
+      "id": 7,
+      "symbol": "/f/",
+      "description": "清唇齿擦音",
+      "exampleWord": "fish",
+      "examplePhonetic": "/fɪʃ/",
+      "category": "擦音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_7.jpg"
+    },
+    {
+      "id": 8,
+      "symbol": "/v/",
+      "description": "浊唇齿擦音",
+      "exampleWord": "very",
+      "examplePhonetic": "/ˈveri/",
+      "category": "擦音",
+      "difficulty": "medium",
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_8.jpg"
+    },
+    {
+      "id": 9,
+      "symbol": "/θ/",
+      "description": "清齿擦音",
+      "exampleWord": "think",
+      "examplePhonetic": "/θɪŋk/",
+      "category": "擦音",
+      "difficulty": "hard",
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_9.jpg"
+    },
+    {
+      "id": 10,
+      "symbol": "/ð/",
+      "description": "浊齿擦音",
+      "exampleWord": "this",
+      "examplePhonetic": "/ðɪs/",
+      "category": "擦音",
+      "difficulty": "hard",
+      "lesson": 2,
+      "imageFile": "phonetic_consonant_10.jpg"
+    },
+    {
+      "id": 11,
+      "symbol": "/s/",
+      "description": "清齿龈擦音",
+      "exampleWord": "see",
+      "examplePhonetic": "/siː/",
+      "category": "擦音",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_11.jpg"
+    },
+    {
+      "id": 12,
+      "symbol": "/z/",
+      "description": "浊齿龈擦音",
+      "exampleWord": "zoo",
+      "examplePhonetic": "/zuː/",
+      "category": "擦音",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_12.jpg"
+    },
+    {
+      "id": 13,
+      "symbol": "/ʃ/",
+      "description": "清齿龈后擦音",
+      "exampleWord": "ship",
+      "examplePhonetic": "/ʃɪp/",
+      "category": "擦音",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_13.jpg"
+    },
+    {
+      "id": 14,
+      "symbol": "/ʒ/",
+      "description": "浊齿龈后擦音",
+      "exampleWord": "vision",
+      "examplePhonetic": "/ˈvɪʒən/",
+      "category": "擦音",
+      "difficulty": "hard",
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_14.jpg"
+    },
+    {
+      "id": 15,
+      "symbol": "/h/",
+      "description": "清声门擦音",
+      "exampleWord": "hat",
+      "examplePhonetic": "/hæt/",
+      "category": "擦音",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "phonetic_consonant_15.jpg"
+    },
+    {
+      "id": 16,
+      "symbol": "/m/",
+      "description": "双唇鼻音",
+      "exampleWord": "man",
+      "examplePhonetic": "/mæn/",
+      "category": "鼻音",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_16.jpg"
+    },
+    {
+      "id": 17,
+      "symbol": "/n/",
+      "description": "齿龈鼻音",
+      "exampleWord": "no",
+      "examplePhonetic": "/noʊ/",
+      "category": "鼻音",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_17.jpg"
+    },
+    {
+      "id": 18,
+      "symbol": "/ŋ/",
+      "description": "软腭鼻音",
+      "exampleWord": "sing",
+      "examplePhonetic": "/sɪŋ/",
+      "category": "鼻音",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_18.jpg"
+    },
+    {
+      "id": 19,
+      "symbol": "/l/",
+      "description": "齿龈边音",
+      "exampleWord": "leg",
+      "examplePhonetic": "/leɡ/",
+      "category": "边音",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_19.jpg"
+    },
+    {
+      "id": 20,
+      "symbol": "/r/",
+      "description": "齿龈近音",
+      "exampleWord": "red",
+      "examplePhonetic": "/red/",
+      "category": "近音",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "phonetic_consonant_20.jpg"
+    },
+    {
+      "id": 21,
+      "symbol": "/j/",
+      "description": "硬腭近音",
+      "exampleWord": "yes",
+      "examplePhonetic": "/jes/",
+      "category": "近音",
+      "difficulty": "medium",
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_21.jpg"
+    },
+    {
+      "id": 22,
+      "symbol": "/w/",
+      "description": "软腭近音",
+      "exampleWord": "we",
+      "examplePhonetic": "/wiː/",
+      "category": "近音",
+      "difficulty": "easy",
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_22.jpg"
+    },
+    {
+      "id": 23,
+      "symbol": "/tʃ/",
+      "description": "清齿龈后塞擦音",
+      "exampleWord": "chair",
+      "examplePhonetic": "/tʃer/",
+      "category": "塞擦音",
+      "difficulty": "medium",
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_23.jpg"
+    },
+    {
+      "id": 24,
+      "symbol": "/dʒ/",
+      "description": "浊齿龈后塞擦音",
+      "exampleWord": "jump",
+      "examplePhonetic": "/dʒʌmp/",
+      "category": "塞擦音",
+      "difficulty": "medium",
+      "lesson": 5,
+      "imageFile": "phonetic_consonant_24.jpg"
+    }
+  ]
+}

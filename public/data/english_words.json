@@ -1,0 +1,204 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "word": "hello",
+      "phonetic": "/həˈloʊ/",
+      "translation": "你好",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1,
+      "imageFile": "english_word_1.jpg"
+    },
+    {
+      "id": 2,
+      "word": "goodbye",
+      "phonetic": "/ɡʊdˈbaɪ/",
+      "translation": "再见",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1,
+      "imageFile": "english_word_2.jpg"
+    },
+    {
+      "id": 3,
+      "word": "thank you",
+      "phonetic": "/θæŋk juː/",
+      "translation": "谢谢你",
+      "level": 1,
+      "category": "greeting",
+      "lesson": 1,
+      "imageFile": "english_word_3.jpg"
+    },
+    {
+      "id": 4,
+      "word": "apple",
+      "phonetic": "/ˈæpl/",
+      "translation": "苹果",
+      "level": 1,
+      "category": "food",
+      "lesson": 1,
+      "imageFile": "english_word_4.jpg"
+    },
+    {
+      "id": 5,
+      "word": "banana",
+      "phonetic": "/bəˈnænə/",
+      "translation": "香蕉",
+      "level": 1,
+      "category": "food",
+      "lesson": 2,
+      "imageFile": "english_word_5.jpg"
+    },
+    {
+      "id": 6,
+      "word": "cat",
+      "phonetic": "/kæt/",
+      "translation": "猫",
+      "level": 1,
+      "category": "animals",
+      "lesson": 2,
+      "imageFile": "english_word_6.jpg"
+    },
+    {
+      "id": 7,
+      "word": "dog",
+      "phonetic": "/dɔːɡ/",
+      "translation": "狗",
+      "level": 1,
+      "category": "animals",
+      "lesson": 2,
+      "imageFile": "english_word_7.jpg"
+    },
+    {
+      "id": 8,
+      "word": "book",
+      "phonetic": "/bʊk/",
+      "translation": "书",
+      "level": 1,
+      "category": "objects",
+      "lesson": 2,
+      "imageFile": "english_word_8.jpg"
+    },
+    {
+      "id": 9,
+      "word": "pen",
+      "phonetic": "/pen/",
+      "translation": "笔",
+      "level": 1,
+      "category": "objects",
+      "lesson": 3,
+      "imageFile": "english_word_9.jpg"
+    },
+    {
+      "id": 10,
+      "word": "sun",
+      "phonetic": "/sʌn/",
+      "translation": "太阳",
+      "level": 1,
+      "category": "nature",
+      "lesson": 3,
+      "imageFile": "english_word_10.jpg"
+    },
+    {
+      "id": 11,
+      "word": "moon",
+      "phonetic": "/muːn/",
+      "translation": "月亮",
+      "level": 1,
+      "category": "nature",
+      "lesson": 3,
+      "imageFile": "english_word_11.jpg"
+    },
+    {
+      "id": 12,
+      "word": "star",
+      "phonetic": "/stɑːr/",
+      "translation": "星星",
+      "level": 1,
+      "category": "nature",
+      "lesson": 3,
+      "imageFile": "english_word_12.jpg"
+    },
+    {
+      "id": 13,
+      "word": "water",
+      "phonetic": "/ˈwɔːtər/",
+      "translation": "水",
+      "level": 1,
+      "category": "food",
+      "lesson": 4,
+      "imageFile": "english_word_13.jpg"
+    },
+    {
+      "id": 14,
+      "word": "red",
+      "phonetic": "/red/",
+      "translation": "红色",
+      "level": 1,
+      "category": "colors",
+      "lesson": 4,
+      "imageFile": "english_word_14.jpg"
+    },
+    {
+      "id": 15,
+      "word": "blue",
+      "phonetic": "/bluː/",
+      "translation": "蓝色",
+      "level": 1,
+      "category": "colors",
+      "lesson": 4,
+      "imageFile": "english_word_15.jpg"
+    },
+    {
+      "id": 16,
+      "word": "yellow",
+      "phonetic": "/ˈjeloʊ/",
+      "translation": "黄色",
+      "level": 1,
+      "category": "colors",
+      "lesson": 4,
+      "imageFile": "english_word_16.jpg"
+    },
+    {
+      "id": 17,
+      "word": "happy",
+      "phonetic": "/ˈhæpi/",
+      "translation": "快乐的",
+      "level": 1,
+      "category": "emotions",
+      "lesson": 5,
+      "imageFile": "english_word_17.jpg"
+    },
+    {
+      "id": 18,
+      "word": "love",
+      "phonetic": "/lʌv/",
+      "translation": "爱",
+      "level": 1,
+      "category": "emotions",
+      "lesson": 5,
+      "imageFile": "english_word_18.jpg"
+    },
+    {
+      "id": 19,
+      "word": "family",
+      "phonetic": "/ˈfæməli/",
+      "translation": "家庭",
+      "level": 1,
+      "category": "family",
+      "lesson": 5,
+      "imageFile": "english_word_19.jpg"
+    },
+    {
+      "id": 20,
+      "word": "friend",
+      "phonetic": "/frend/",
+      "translation": "朋友",
+      "level": 1,
+      "category": "people",
+      "lesson": 5,
+      "imageFile": "english_word_20.jpg"
+    }
+  ]
+}

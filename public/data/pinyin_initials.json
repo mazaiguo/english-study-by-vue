@@ -1,0 +1,235 @@
+{
+  "initials": [
+    {
+      "id": 1,
+      "pinyin": "b",
+      "description": "双唇不送气清塞音",
+      "exampleCharacter": "爸",
+      "examplePinyin": "bà",
+      "category": "双唇音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_initial_1.jpg"
+    },
+    {
+      "id": 2,
+      "pinyin": "p",
+      "description": "双唇送气清塞音",
+      "exampleCharacter": "婆",
+      "examplePinyin": "pó",
+      "category": "双唇音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_initial_2.jpg"
+    },
+    {
+      "id": 3,
+      "pinyin": "m",
+      "description": "双唇鼻音",
+      "exampleCharacter": "妈",
+      "examplePinyin": "mā",
+      "category": "双唇音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_initial_3.jpg"
+    },
+    {
+      "id": 4,
+      "pinyin": "f",
+      "description": "唇齿清擦音",
+      "exampleCharacter": "佛",
+      "examplePinyin": "fó",
+      "category": "唇齿音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_initial_4.jpg"
+    },
+    {
+      "id": 5,
+      "pinyin": "d",
+      "description": "舌尖不送气清塞音",
+      "exampleCharacter": "大",
+      "examplePinyin": "dà",
+      "category": "舌尖音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_initial_5.jpg"
+    },
+    {
+      "id": 6,
+      "pinyin": "t",
+      "description": "舌尖送气清塞音",
+      "exampleCharacter": "他",
+      "examplePinyin": "tā",
+      "category": "舌尖音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_initial_6.jpg"
+    },
+    {
+      "id": 7,
+      "pinyin": "n",
+      "description": "舌尖鼻音",
+      "exampleCharacter": "那",
+      "examplePinyin": "nà",
+      "category": "舌尖音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_initial_7.jpg"
+    },
+    {
+      "id": 8,
+      "pinyin": "l",
+      "description": "舌尖边音",
+      "exampleCharacter": "拉",
+      "examplePinyin": "lā",
+      "category": "舌尖音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_initial_8.jpg"
+    },
+    {
+      "id": 9,
+      "pinyin": "g",
+      "description": "舌根不送气清塞音",
+      "exampleCharacter": "哥",
+      "examplePinyin": "gē",
+      "category": "舌根音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_initial_9.jpg"
+    },
+    {
+      "id": 10,
+      "pinyin": "k",
+      "description": "舌根送气清塞音",
+      "exampleCharacter": "科",
+      "examplePinyin": "kē",
+      "category": "舌根音",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_initial_10.jpg"
+    },
+    {
+      "id": 11,
+      "pinyin": "h",
+      "description": "舌根清擦音",
+      "exampleCharacter": "喝",
+      "examplePinyin": "hē",
+      "category": "舌根音",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "pinyin_initial_11.jpg"
+    },
+    {
+      "id": 12,
+      "pinyin": "j",
+      "description": "舌面不送气清塞擦音",
+      "exampleCharacter": "鸡",
+      "examplePinyin": "jī",
+      "category": "舌面音",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "pinyin_initial_12.jpg"
+    },
+    {
+      "id": 13,
+      "pinyin": "q",
+      "description": "舌面送气清塞擦音",
+      "exampleCharacter": "七",
+      "examplePinyin": "qī",
+      "category": "舌面音",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "pinyin_initial_13.jpg"
+    },
+    {
+      "id": 14,
+      "pinyin": "x",
+      "description": "舌面清擦音",
+      "exampleCharacter": "西",
+      "examplePinyin": "xī",
+      "category": "舌面音",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "pinyin_initial_14.jpg"
+    },
+    {
+      "id": 15,
+      "pinyin": "zh",
+      "description": "舌尖后不送气清塞擦音",
+      "exampleCharacter": "知",
+      "examplePinyin": "zhī",
+      "category": "翘舌音",
+      "difficulty": "hard",
+      "lesson": 3,
+      "imageFile": "pinyin_initial_15.jpg"
+    },
+    {
+      "id": 16,
+      "pinyin": "ch",
+      "description": "舌尖后送气清塞擦音",
+      "exampleCharacter": "吃",
+      "examplePinyin": "chī",
+      "category": "翘舌音",
+      "difficulty": "hard",
+      "lesson": 4,
+      "imageFile": "pinyin_initial_16.jpg"
+    },
+    {
+      "id": 17,
+      "pinyin": "sh",
+      "description": "舌尖后清擦音",
+      "exampleCharacter": "诗",
+      "examplePinyin": "shī",
+      "category": "翘舌音",
+      "difficulty": "hard",
+      "lesson": 4,
+      "imageFile": "pinyin_initial_17.jpg"
+    },
+    {
+      "id": 18,
+      "pinyin": "r",
+      "description": "舌尖后浊擦音",
+      "exampleCharacter": "日",
+      "examplePinyin": "rì",
+      "category": "翘舌音",
+      "difficulty": "hard",
+      "lesson": 4,
+      "imageFile": "pinyin_initial_18.jpg"
+    },
+    {
+      "id": 19,
+      "pinyin": "z",
+      "description": "舌尖前不送气清塞擦音",
+      "exampleCharacter": "字",
+      "examplePinyin": "zì",
+      "category": "平舌音",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "pinyin_initial_19.jpg"
+    },
+    {
+      "id": 20,
+      "pinyin": "c",
+      "description": "舌尖前送气清塞擦音",
+      "exampleCharacter": "次",
+      "examplePinyin": "cì",
+      "category": "平舌音",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "pinyin_initial_20.jpg"
+    },
+    {
+      "id": 21,
+      "pinyin": "s",
+      "description": "舌尖前清擦音",
+      "exampleCharacter": "思",
+      "examplePinyin": "sī",
+      "category": "平舌音",
+      "difficulty": "medium",
+      "lesson": 5,
+      "imageFile": "pinyin_initial_21.jpg"
+    }
+  ]
+}

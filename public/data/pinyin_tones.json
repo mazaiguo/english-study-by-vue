@@ -1,0 +1,224 @@
+{
+  "tones": [
+    {
+      "id": 1,
+      "pinyin": "mā",
+      "tone": "一声（阴平）",
+      "description": "高平调，调值 55",
+      "exampleCharacter": "妈",
+      "meaning": "mother",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_tone_1.jpg"
+    },
+    {
+      "id": 2,
+      "pinyin": "má",
+      "tone": "二声（阳平）",
+      "description": "中升调，调值 35",
+      "exampleCharacter": "麻",
+      "meaning": "hemp",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_tone_2.jpg"
+    },
+    {
+      "id": 3,
+      "pinyin": "mǎ",
+      "tone": "三声（上声）",
+      "description": "降升调，调值 214",
+      "exampleCharacter": "马",
+      "meaning": "horse",
+      "difficulty": "medium",
+      "lesson": 1,
+      "imageFile": "pinyin_tone_3.jpg"
+    },
+    {
+      "id": 4,
+      "pinyin": "mà",
+      "tone": "四声（去声）",
+      "description": "全降调，调值 51",
+      "exampleCharacter": "骂",
+      "meaning": "scold",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_tone_4.jpg"
+    },
+    {
+      "id": 5,
+      "pinyin": "bā",
+      "tone": "一声",
+      "description": "高平调",
+      "exampleCharacter": "八",
+      "meaning": "eight",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "pinyin_tone_5.jpg"
+    },
+    {
+      "id": 6,
+      "pinyin": "bá",
+      "tone": "二声",
+      "description": "中升调",
+      "exampleCharacter": "拔",
+      "meaning": "pull",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_tone_6.jpg"
+    },
+    {
+      "id": 7,
+      "pinyin": "bǎ",
+      "tone": "三声",
+      "description": "降升调",
+      "exampleCharacter": "把",
+      "meaning": "handle",
+      "difficulty": "medium",
+      "lesson": 2,
+      "imageFile": "pinyin_tone_7.jpg"
+    },
+    {
+      "id": 8,
+      "pinyin": "bà",
+      "tone": "四声",
+      "description": "全降调",
+      "exampleCharacter": "爸",
+      "meaning": "dad",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_tone_8.jpg"
+    },
+    {
+      "id": 9,
+      "pinyin": "dā",
+      "tone": "一声",
+      "description": "高平调",
+      "exampleCharacter": "搭",
+      "meaning": "build",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_tone_9.jpg"
+    },
+    {
+      "id": 10,
+      "pinyin": "dá",
+      "tone": "二声",
+      "description": "中升调",
+      "exampleCharacter": "达",
+      "meaning": "reach",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "pinyin_tone_10.jpg"
+    },
+    {
+      "id": 11,
+      "pinyin": "dǎ",
+      "tone": "三声",
+      "description": "降升调",
+      "exampleCharacter": "打",
+      "meaning": "hit",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "pinyin_tone_11.jpg"
+    },
+    {
+      "id": 12,
+      "pinyin": "dà",
+      "tone": "四声",
+      "description": "全降调",
+      "exampleCharacter": "大",
+      "meaning": "big",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "pinyin_tone_12.jpg"
+    },
+    {
+      "id": 13,
+      "pinyin": "tā",
+      "tone": "一声",
+      "description": "高平调",
+      "exampleCharacter": "他",
+      "meaning": "he",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "pinyin_tone_13.jpg"
+    },
+    {
+      "id": 14,
+      "pinyin": "tá",
+      "tone": "二声",
+      "description": "中升调",
+      "exampleCharacter": "踏",
+      "meaning": "step",
+      "difficulty": "easy",
+      "lesson": 3,
+      "imageFile": "pinyin_tone_14.jpg"
+    },
+    {
+      "id": 15,
+      "pinyin": "tǎ",
+      "tone": "三声",
+      "description": "降升调",
+      "exampleCharacter": "塔",
+      "meaning": "tower",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "pinyin_tone_15.jpg"
+    },
+    {
+      "id": 16,
+      "pinyin": "tà",
+      "tone": "四声",
+      "description": "全降调",
+      "exampleCharacter": "踏",
+      "meaning": "step on",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "pinyin_tone_16.jpg"
+    },
+    {
+      "id": 17,
+      "pinyin": "shī",
+      "tone": "一声",
+      "description": "高平调",
+      "exampleCharacter": "师",
+      "meaning": "teacher",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "pinyin_tone_17.jpg"
+    },
+    {
+      "id": 18,
+      "pinyin": "shí",
+      "tone": "二声",
+      "description": "中升调",
+      "exampleCharacter": "十",
+      "meaning": "ten",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "pinyin_tone_18.jpg"
+    },
+    {
+      "id": 19,
+      "pinyin": "shǐ",
+      "tone": "三声",
+      "description": "降升调",
+      "exampleCharacter": "使",
+      "meaning": "use",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "pinyin_tone_19.jpg"
+    },
+    {
+      "id": 20,
+      "pinyin": "shì",
+      "tone": "四声",
+      "description": "全降调",
+      "exampleCharacter": "是",
+      "meaning": "is",
+      "difficulty": "easy",
+      "lesson": 4,
+      "imageFile": "pinyin_tone_20.jpg"
+    }
+  ]
+}

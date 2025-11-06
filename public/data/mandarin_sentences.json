@@ -1,0 +1,154 @@
+{
+  "sentences": [
+    {
+      "id": 1,
+      "hanzi": "你好吗？",
+      "pinyin": "nǐ hǎo ma?",
+      "translation": "How are you?",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_1.jpg"
+    },
+    {
+      "id": 2,
+      "hanzi": "我很好。",
+      "pinyin": "wǒ hěn hǎo.",
+      "translation": "I'm fine.",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_2.jpg"
+    },
+    {
+      "id": 3,
+      "hanzi": "早上好！",
+      "pinyin": "zǎo shang hǎo!",
+      "translation": "Good morning!",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_3.jpg"
+    },
+    {
+      "id": 4,
+      "hanzi": "晚安。",
+      "pinyin": "wǎn ān.",
+      "translation": "Good night.",
+      "category": "greeting",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "mandarin_sentence_4.jpg"
+    },
+    {
+      "id": 5,
+      "hanzi": "我爱你。",
+      "pinyin": "wǒ ài nǐ.",
+      "translation": "I love you.",
+      "category": "emotion",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_5.jpg"
+    },
+    {
+      "id": 6,
+      "hanzi": "我饿了。",
+      "pinyin": "wǒ è le.",
+      "translation": "I'm hungry.",
+      "category": "daily",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_6.jpg"
+    },
+    {
+      "id": 7,
+      "hanzi": "我渴了。",
+      "pinyin": "wǒ kě le.",
+      "translation": "I'm thirsty.",
+      "category": "daily",
+      "difficulty": "easy",
+      "lesson": 2,
+      "imageFile": "mandarin_sentence_7.jpg"
+    },
+    {
+      "id": 8,
+      "hanzi": "这是什么？",
+      "pinyin": "zhè shì shén me?",
+      "translation": "What is this?",
+      "category": "question",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_8.jpg"
+    },
+    {
+      "id": 9,
+      "hanzi": "那是一本书。",
+      "pinyin": "nà shì yì běn shū.",
+      "translation": "That is a book.",
+      "category": "answer",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_9.jpg"
+    },
+    {
+      "id": 10,
+      "hanzi": "我喜欢苹果。",
+      "pinyin": "wǒ xǐ huan píng guǒ.",
+      "translation": "I like apples.",
+      "category": "preference",
+      "difficulty": "medium",
+      "lesson": 3,
+      "imageFile": "mandarin_sentence_10.jpg"
+    },
+    {
+      "id": 11,
+      "hanzi": "今天天气很好。",
+      "pinyin": "jīn tiān tiān qì hěn hǎo.",
+      "translation": "The weather is nice today.",
+      "category": "weather",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_11.jpg"
+    },
+    {
+      "id": 12,
+      "hanzi": "我在学习。",
+      "pinyin": "wǒ zài xué xí.",
+      "translation": "I am studying.",
+      "category": "activity",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_12.jpg"
+    },
+    {
+      "id": 13,
+      "hanzi": "请帮帮我。",
+      "pinyin": "qǐng bāng bang wǒ.",
+      "translation": "Please help me.",
+      "category": "request",
+      "difficulty": "medium",
+      "lesson": 4,
+      "imageFile": "mandarin_sentence_13.jpg"
+    },
+    {
+      "id": 14,
+      "hanzi": "对不起。",
+      "pinyin": "duì bu qǐ.",
+      "translation": "I'm sorry.",
+      "category": "apology",
+      "difficulty": "easy",
+      "lesson": 5,
+      "imageFile": "mandarin_sentence_14.jpg"
+    },
+    {
+      "id": 15,
+      "hanzi": "没关系。",
+      "pinyin": "méi guān xi.",
+      "translation": "It's okay.",
+      "category": "response",
+      "difficulty": "easy",
+      "lesson": 5,
+      "imageFile": "mandarin_sentence_15.jpg"
+    }
+  ]
+}

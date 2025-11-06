@@ -1,0 +1,92 @@
+{
+  "diphthongs": [
+    {
+      "id": 1,
+      "symbol": "/eɪ/",
+      "description": "双元音，从/e/到/ɪ/",
+      "exampleWord": "day",
+      "examplePhonetic": "/deɪ/",
+      "category": "双元音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_1.jpg"
+    },
+    {
+      "id": 2,
+      "symbol": "/aɪ/",
+      "description": "双元音，从/a/到/ɪ/",
+      "exampleWord": "my",
+      "examplePhonetic": "/maɪ/",
+      "category": "双元音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_2.jpg"
+    },
+    {
+      "id": 3,
+      "symbol": "/ɔɪ/",
+      "description": "双元音，从/ɔ/到/ɪ/",
+      "exampleWord": "boy",
+      "examplePhonetic": "/bɔɪ/",
+      "category": "双元音",
+      "difficulty": "medium",
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_3.jpg"
+    },
+    {
+      "id": 4,
+      "symbol": "/aʊ/",
+      "description": "双元音，从/a/到/ʊ/",
+      "exampleWord": "how",
+      "examplePhonetic": "/haʊ/",
+      "category": "双元音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_4.jpg"
+    },
+    {
+      "id": 5,
+      "symbol": "/oʊ/",
+      "description": "双元音，从/o/到/ʊ/",
+      "exampleWord": "go",
+      "examplePhonetic": "/ɡoʊ/",
+      "category": "双元音",
+      "difficulty": "easy",
+      "lesson": 1,
+      "imageFile": "phonetic_diphthong_5.jpg"
+    },
+    {
+      "id": 6,
+      "symbol": "/ɪər/",
+      "description": "双元音+r，从/ɪ/到/ə/",
+      "exampleWord": "here",
+      "examplePhonetic": "/hɪər/",
+      "category": "双元音",
+      "difficulty": "medium",
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_6.jpg"
+    },
+    {
+      "id": 7,
+      "symbol": "/eər/",
+      "description": "双元音+r，从/e/到/ə/",
+      "exampleWord": "hair",
+      "examplePhonetic": "/heər/",
+      "category": "双元音",
+      "difficulty": "medium",
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_7.jpg"
+    },
+    {
+      "id": 8,
+      "symbol": "/ʊər/",
+      "description": "双元音+r，从/ʊ/到/ə/",
+      "exampleWord": "tour",
+      "examplePhonetic": "/tʊər/",
+      "category": "双元音",
+      "difficulty": "hard",
+      "lesson": 2,
+      "imageFile": "phonetic_diphthong_8.jpg"
+    }
+  ]
+}
