@@ -199,6 +199,76 @@
       "category": "colors",
       "lesson": 7,
       "imageFile": "mandarin_word_20.jpg"
+    },
+    {
+      "id": 21,
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "translation": "have, there is/are",
+      "level": 1,
+      "category": "verbs",
+      "lesson": 8,
+      "imageFile": "mandarin_word_21.jpg"
+    },
+    {
+      "id": 22,
+      "hanzi": "无",
+      "pinyin": "wú",
+      "translation": "not have, without",
+      "level": 1,
+      "category": "verbs",
+      "lesson": 8,
+      "imageFile": "mandarin_word_22.jpg"
+    },
+    {
+      "id": 23,
+      "hanzi": "去",
+      "pinyin": "qù",
+      "translation": "go",
+      "level": 1,
+      "category": "verbs",
+      "lesson": 8,
+      "imageFile": "mandarin_word_23.jpg"
+    },
+    {
+      "id": 24,
+      "hanzi": "来",
+      "pinyin": "lái",
+      "translation": "come",
+      "level": 1,
+      "category": "verbs",
+      "lesson": 8,
+      "imageFile": "mandarin_word_24.jpg"
+    },
+    {
+      "id": 25,
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "translation": "far",
+      "level": 1,
+      "category": "adjectives",
+      "lesson": 8,
+      "imageFile": "mandarin_word_25.jpg"
+    },
+    {
+      "id": 26,
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "translation": "near, close",
+      "level": 1,
+      "category": "adjectives",
+      "lesson": 8,
+      "imageFile": "mandarin_word_26.jpg"
+    },
+    {
+      "id": 27,
+      "hanzi": "色",
+      "pinyin": "sè",
+      "translation": "color",
+      "level": 1,
+      "category": "colors",
+      "lesson": 8,
+      "imageFile": "mandarin_word_27.jpg"
     }
   ]
 }

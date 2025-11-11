@@ -135,10 +135,30 @@ const {
   transform: translateX(-50%);
   font-size: 20px;
   padding: 12px 30px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 25px;
   white-space: nowrap;
   transition: color 0.3s ease;
+  z-index: 10; /* 确保在最上层 */
+  backdrop-filter: blur(8px); /* 添加毛玻璃效果 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 添加阴影使其更突出 */
+}
+
+/* 桌面端优化：避免与图片重合 */
+@media (min-width: 769px) {
+  .learning-card {
+    padding-bottom: 80px; /* 为gesture-hint留出更多空间 */
+  }
+  
+  .gesture-hint {
+    bottom: 20px; /* 稍微靠下一些 */
+    font-size: 18px;
+    padding: 10px 24px;
+  }
+  
+  .content-area {
+    padding-bottom: 40px; /* 确保内容不会与提示重合 */
+  }
 }
 
 /* 响应式设计 */

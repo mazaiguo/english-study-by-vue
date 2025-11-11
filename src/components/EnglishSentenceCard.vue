@@ -30,7 +30,7 @@
         :src="getImageUrl(sentence.imageFile)"
         :alt="sentence.sentence"
         class="sentence-image"
-        @error="handleImageError"
+        @error="(e) => handleImageError(e, sentence.imageFile)"
       />
     </div>
 
@@ -112,6 +112,8 @@ const getDifficultyColor = (difficulty) => {
 </script>
 
 <style scoped>
+/* 复用公共样式 sentence-image-container, sentence-image, meta-info, info-badge */
+
 .english-sentence-card {
   width: 100%;
   max-width: 900px;
@@ -121,38 +123,7 @@ const getDifficultyColor = (difficulty) => {
   gap: 20px;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 350px;
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.sentence-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-}
-
-.sentence-image.loading {
-  opacity: 0.5;
-}
-
-.sentence-image.loaded {
-  opacity: 1;
-}
-
-.sentence-image.image-error {
-  object-fit: contain;
-}
-
+/* 英语句子特定样式 */
 .sentence-text {
   font-size: 48px;
   font-weight: bold;
@@ -175,22 +146,7 @@ const getDifficultyColor = (difficulty) => {
   transition: color 0.3s ease;
 }
 
-.meta-info {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.info-badge {
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* 响应式设计 */
+/* 响应式设计 - 只保留组件特定样式 */
 @media (max-width: 768px) {
   .sentence-text {
     font-size: 36px;
@@ -202,11 +158,6 @@ const getDifficultyColor = (difficulty) => {
 
   .translation-text {
     font-size: 26px;
-  }
-
-  .info-badge {
-    font-size: 16px;
-    padding: 6px 16px;
   }
 }
 
@@ -222,19 +173,10 @@ const getDifficultyColor = (difficulty) => {
   .translation-text {
     font-size: 20px;
   }
-
-  .info-badge {
-    font-size: 14px;
-    padding: 5px 12px;
-  }
 }
 
 /* iPhone 14 Pro Max 优化 (430px) */
 @media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
-  .english-sentence-card {
-    gap: 38px;
-  }
-
   .sentence-text {
     font-size: 42px;
   }
@@ -246,21 +188,12 @@ const getDifficultyColor = (difficulty) => {
   .translation-text {
     font-size: 30px;
   }
-
-  .info-badge {
-    font-size: 17px;
-    padding: 7px 18px;
-  }
 }
 
-/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) */
 @media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
-  .english-sentence-card {
-    gap: 34px;
-  }
-
   .sentence-text {
-    font-size: 36px; /* 基准英语句子大小 */
+    font-size: 36px;
   }
 
   .phonetic-text {
@@ -269,11 +202,6 @@ const getDifficultyColor = (difficulty) => {
 
   .translation-text {
     font-size: 26px;
-  }
-
-  .info-badge {
-    font-size: 15px;
-    padding: 6px 15px;
   }
 }
 </style>

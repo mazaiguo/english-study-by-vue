@@ -38,7 +38,7 @@
         :src="getImageUrl(phonetic.imageFile)"
         :alt="phonetic.symbol"
         class="phonetic-image"
-        @error="handleImageError"
+        @error="(e) => handleImageError(e, phonetic.imageFile)"
       />
     </div>
 
@@ -73,6 +73,8 @@ const theme = computed(() => themeStore.currentTheme)
 </script>
 
 <style scoped>
+/* 复用公共样式 phonetic-image-container, phonetic-image, category-badge */
+
 .phonetic-card {
   width: 100%;
   display: flex;
@@ -82,38 +84,7 @@ const theme = computed(() => themeStore.currentTheme)
   position: relative;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 280px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.phonetic-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-}
-
-.phonetic-image.loading {
-  opacity: 0.5;
-}
-
-.phonetic-image.loaded {
-  opacity: 1;
-}
-
-.phonetic-image.image-error {
-  object-fit: contain;
-}
-
+/* 音标特定样式 */
 .phonetic-symbol {
   font-size: 180px;
   font-weight: bold;
@@ -146,18 +117,7 @@ const theme = computed(() => themeStore.currentTheme)
   transition: color 0.3s ease;
 }
 
-.category-badge {
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* 响应式设计 */
+/* 响应式设计 - 只保留组件特定样式 */
 @media (max-width: 768px) {
   .phonetic-symbol {
     font-size: 140px;
@@ -170,11 +130,6 @@ const theme = computed(() => themeStore.currentTheme)
   .example-section {
     font-size: 38px;
     gap: 15px;
-  }
-
-  .category-badge {
-    font-size: 18px;
-    padding: 6px 16px;
   }
 }
 
@@ -191,21 +146,12 @@ const theme = computed(() => themeStore.currentTheme)
     font-size: 28px;
     gap: 10px;
   }
-
-  .category-badge {
-    font-size: 16px;
-    padding: 5px 12px;
-  }
 }
 
 /* iPhone 14 Pro Max 优化 (430px) */
 @media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
-  .phonetic-card {
-    gap: 45px;
-  }
-
   .phonetic-symbol {
-    font-size: 160px; /* Pro Max 更大 */
+    font-size: 160px;
   }
 
   .description-text {
@@ -216,21 +162,12 @@ const theme = computed(() => themeStore.currentTheme)
     font-size: 50px;
     gap: 20px;
   }
-
-  .category-badge {
-    font-size: 18px;
-    padding: 7px 16px;
-  }
 }
 
-/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) */
 @media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
-  .phonetic-card {
-    gap: 40px;
-  }
-
   .phonetic-symbol {
-    font-size: 135px; /* 基准音标大小 */
+    font-size: 135px;
   }
 
   .description-text {
@@ -240,11 +177,6 @@ const theme = computed(() => themeStore.currentTheme)
   .example-section {
     font-size: 40px;
     gap: 15px;
-  }
-
-  .category-badge {
-    font-size: 16px;
-    padding: 6px 13px;
   }
 }
 </style>

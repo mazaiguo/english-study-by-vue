@@ -30,7 +30,7 @@
         :src="getImageUrl(word.imageFile)"
         :alt="word.word"
         class="word-image"
-        @error="handleImageError"
+        @error="(e) => handleImageError(e, word.imageFile)"
       />
     </div>
 
@@ -80,6 +80,8 @@ const getCategoryName = (category) => {
 </script>
 
 <style scoped>
+/* 复用公共样式 card-wrapper, image-container, word-image, category-badge */
+
 .english-word-card {
   width: 100%;
   display: flex;
@@ -89,38 +91,7 @@ const getCategoryName = (category) => {
   position: relative;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.word-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-}
-
-.word-image.loading {
-  opacity: 0.5;
-}
-
-.word-image.loaded {
-  opacity: 1;
-}
-
-.word-image.image-error {
-  object-fit: contain;
-}
-
+/* 英文单词特定样式 */
 .word-text {
   font-size: 120px;
   font-weight: bold;
@@ -141,18 +112,7 @@ const getCategoryName = (category) => {
   transition: color 0.3s ease;
 }
 
-.category-badge {
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* 响应式设计 */
+/* 响应式设计 - 只保留组件特定的字体大小调整 */
 @media (max-width: 768px) {
   .word-text {
     font-size: 90px;
@@ -164,11 +124,6 @@ const getCategoryName = (category) => {
 
   .translation-text {
     font-size: 34px;
-  }
-
-  .category-badge {
-    font-size: 18px;
-    padding: 6px 16px;
   }
 }
 
@@ -184,21 +139,12 @@ const getCategoryName = (category) => {
   .translation-text {
     font-size: 26px;
   }
-
-  .category-badge {
-    font-size: 16px;
-    padding: 5px 12px;
-  }
 }
 
 /* iPhone 14 Pro Max 优化 (430px) */
 @media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
-  .english-word-card {
-    gap: 38px;
-  }
-
   .word-text {
-    font-size: 105px; /* Pro Max 更大 */
+    font-size: 105px;
   }
 
   .phonetic-text {
@@ -208,21 +154,12 @@ const getCategoryName = (category) => {
   .translation-text {
     font-size: 38px;
   }
-
-  .category-badge {
-    font-size: 18px;
-    padding: 7px 16px;
-  }
 }
 
-/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) */
 @media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
-  .english-word-card {
-    gap: 34px;
-  }
-
   .word-text {
-    font-size: 88px; /* 基准英语单词大小 */
+    font-size: 88px;
   }
 
   .phonetic-text {
@@ -231,11 +168,6 @@ const getCategoryName = (category) => {
 
   .translation-text {
     font-size: 32px;
-  }
-
-  .category-badge {
-    font-size: 16px;
-    padding: 6px 14px;
   }
 }
 </style>

@@ -30,7 +30,7 @@
         :src="getImageUrl(word.imageFile)"
         :alt="word.hanzi"
         class="word-image"
-        @error="handleImageError"
+        @error="(e) => handleImageError(e, word.imageFile)"
       />
     </div>
 
@@ -78,7 +78,10 @@ const getCategoryName = (category) => {
 </script>
 
 <style scoped>
+/* 复用公共样式 card-wrapper, image-container, word-image, category-badge */
+
 .mandarin-word-card {
+  /* 继承 card-wrapper 的基础样式 */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -87,38 +90,7 @@ const getCategoryName = (category) => {
   position: relative;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.word-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  transition: transform 0.3s ease;
-}
-
-.word-image.loading {
-  opacity: 0.5;
-}
-
-.word-image.loaded {
-  opacity: 1;
-}
-
-.word-image.image-error {
-  object-fit: contain;
-}
-
+/* 汉字特定样式 - 比基础大小更大 */
 .hanzi-text {
   font-size: 180px;
   font-weight: bold;
@@ -138,23 +110,10 @@ const getCategoryName = (category) => {
   transition: color 0.3s ease;
 }
 
-.category-badge {
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
+/* 响应式设计 - 只保留组件特定的字体大小调整 */
+/* category-badge 的响应式样式已由 card-common.css 提供 */
 
-/* 响应式设计 */
 @media (max-width: 768px) {
-  .mandarin-word-card {
-    gap: 28px;
-  }
-
   .hanzi-text {
     font-size: 140px;
   }
@@ -166,68 +125,11 @@ const getCategoryName = (category) => {
   .translation-text {
     font-size: 36px;
   }
-
-  .category-badge {
-    font-size: 17px;
-    padding: 6px 14px;
-  }
 }
 
 @media (max-width: 480px) {
-  .mandarin-word-card {
-    gap: 35px; /* 增大间距，让卡片更充实 */
-  }
-
   .hanzi-text {
-    font-size: 130px; /* 增大字体 */
-  }
-
-  .pinyin-text {
-    font-size: 40px; /* 增大字体 */
-  }
-
-  .translation-text {
-    font-size: 32px; /* 增大字体 */
-  }
-
-  .category-badge {
-    font-size: 15px;
-    padding: 5px 12px;
-  }
-}
-
-/* iPhone 14 Pro Max 优化 (430px) */
-@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
-  .mandarin-word-card {
-    gap: 38px;
-  }
-
-  .hanzi-text {
-    font-size: 150px; /* Pro Max 更大屏幕 */
-  }
-
-  .pinyin-text {
-    font-size: 48px;
-  }
-
-  .translation-text {
-    font-size: 38px;
-  }
-
-  .category-badge {
-    font-size: 16px;
-    padding: 6px 14px;
-  }
-}
-
-/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) - 基准布局 */
-@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
-  .mandarin-word-card {
-    gap: 32px;
-  }
-
-  .hanzi-text {
-    font-size: 125px; /* 基准字体大小 */
+    font-size: 130px;
   }
 
   .pinyin-text {
@@ -237,19 +139,40 @@ const getCategoryName = (category) => {
   .translation-text {
     font-size: 32px;
   }
+}
 
-  .category-badge {
-    font-size: 15px;
-    padding: 5px 12px;
+/* iPhone 14 Pro Max 优化 (430px) */
+@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
+  .hanzi-text {
+    font-size: 150px;
+  }
+
+  .pinyin-text {
+    font-size: 48px;
+  }
+
+  .translation-text {
+    font-size: 38px;
+  }
+}
+
+/* iPhone 14 / 14 Pro / 16 Pro 优化 (390-393px) */
+@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
+  .hanzi-text {
+    font-size: 125px;
+  }
+
+  .pinyin-text {
+    font-size: 40px;
+  }
+
+  .translation-text {
+    font-size: 32px;
   }
 }
 
 /* iPhone SE / 小屏手机 */
 @media (max-width: 375px) {
-  .mandarin-word-card {
-    gap: 28px;
-  }
-
   .hanzi-text {
     font-size: 105px;
   }
@@ -261,11 +184,7 @@ const getCategoryName = (category) => {
   .translation-text {
     font-size: 27px;
   }
-
-  .category-badge {
-    font-size: 14px;
-    padding: 4px 10px;
-  }
 }
 </style>
+
 

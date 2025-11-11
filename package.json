@@ -8,7 +8,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sync-data": "node scripts/sync-data.js"
+    "sync-data": "node scripts/sync-data.js",
+    "sync-images": "node scripts/sync-media.js images",
+    "sync-videos": "node scripts/sync-media.js videos",
+    "sync-media": "node scripts/sync-media.js all",
+    "sync-all": "npm run sync-data && npm run sync-media"
   },
   "dependencies": {
     "vue": "^3.4.0",

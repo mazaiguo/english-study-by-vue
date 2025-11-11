@@ -1,0 +1,325 @@
+/**
+ * 卡片组件公共样式
+ * 所有学习卡片共用的样式定义
+ */
+
+/* ============================================
+   图片/视频容器样式
+   ============================================ */
+
+.image-container,
+.video-container {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+/* 句子卡片使用更大的图片容器 */
+.sentence-image-container {
+  max-width: 350px;
+  height: 220px;
+}
+
+/* 拼音和音标卡片使用稍小的图片容器 */
+.pinyin-image-container,
+.phonetic-image-container {
+  max-width: 280px;
+  height: 180px;
+}
+
+/* ============================================
+   图片/视频样式
+   ============================================ */
+
+.card-image,
+.word-image,
+.sentence-image,
+.pinyin-image,
+.phonetic-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* 加载状态 */
+.card-image.loading,
+.word-image.loading,
+.sentence-image.loading,
+.pinyin-image.loading,
+.phonetic-image.loading {
+  opacity: 0.5;
+}
+
+/* 加载完成 */
+.card-image.loaded,
+.word-image.loaded,
+.sentence-image.loaded,
+.pinyin-image.loaded,
+.phonetic-image.loaded {
+  opacity: 1;
+}
+
+/* 错误状态 - 使用contain以完整显示占位符 */
+.card-image.media-error,
+.word-image.media-error,
+.sentence-image.media-error,
+.pinyin-image.media-error,
+.phonetic-image.media-error {
+  object-fit: contain;
+}
+
+/* 悬停效果（桌面端） */
+@media (hover: hover) {
+  .card-image:hover,
+  .word-image:hover,
+  .sentence-image:hover,
+  .pinyin-image:hover,
+  .phonetic-image:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   分类标签样式
+   ============================================ */
+
+.category-badge,
+.info-badge {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 多个标签时的布局 */
+.meta-info {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.meta-info .info-badge {
+  position: static;
+}
+
+/* ============================================
+   卡片基础布局
+   ============================================ */
+
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* ============================================
+   文本样式（基础大小，各组件可覆盖）
+   ============================================ */
+
+.primary-text {
+  font-size: 120px;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+  line-height: 1.2;
+}
+
+.secondary-text {
+  font-size: 48px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tertiary-text {
+  font-size: 36px;
+  transition: color 0.3s ease;
+}
+
+/* ============================================
+   响应式设计 - 平板
+   ============================================ */
+
+@media (max-width: 768px) {
+  .image-container,
+  .video-container {
+    max-width: 280px;
+    height: 180px;
+  }
+
+  .sentence-image-container {
+    max-width: 320px;
+    height: 200px;
+  }
+
+  .category-badge,
+  .info-badge {
+    font-size: 18px;
+    padding: 6px 16px;
+    top: -18px;
+  }
+
+  .primary-text {
+    font-size: 100px;
+  }
+
+  .secondary-text {
+    font-size: 40px;
+  }
+
+  .tertiary-text {
+    font-size: 32px;
+  }
+}
+
+/* ============================================
+   响应式设计 - 手机
+   ============================================ */
+
+@media (max-width: 480px) {
+  .image-container,
+  .video-container {
+    max-width: 260px;
+    height: 160px;
+  }
+
+  .sentence-image-container {
+    max-width: 280px;
+    height: 180px;
+  }
+
+  .pinyin-image-container,
+  .phonetic-image-container {
+    max-width: 240px;
+    height: 150px;
+  }
+
+  .category-badge,
+  .info-badge {
+    font-size: 15px;
+    padding: 5px 12px;
+    top: -16px;
+    left: 15px;
+  }
+
+  .meta-info {
+    top: -16px;
+    left: 15px;
+    gap: 8px;
+  }
+
+  .primary-text {
+    font-size: 80px;
+  }
+
+  .secondary-text {
+    font-size: 32px;
+  }
+
+  .tertiary-text {
+    font-size: 26px;
+  }
+}
+
+/* ============================================
+   iPhone 优化
+   ============================================ */
+
+/* iPhone 14 Pro Max (430px x 932px) */
+@media (min-width: 415px) and (max-width: 440px) and (min-height: 900px) {
+  .image-container,
+  .video-container {
+    max-width: 270px;
+    height: 170px;
+  }
+
+  .category-badge,
+  .info-badge {
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+}
+
+/* iPhone 14 / 14 Pro (390-393px x 844-852px) */
+@media (min-width: 385px) and (max-width: 400px) and (min-height: 840px) {
+  .image-container,
+  .video-container {
+    max-width: 260px;
+    height: 165px;
+  }
+
+  .category-badge,
+  .info-badge {
+    font-size: 15px;
+    padding: 5px 13px;
+  }
+}
+
+/* iPhone SE / 小屏手机 */
+@media (max-width: 375px) {
+  .image-container,
+  .video-container {
+    max-width: 240px;
+    height: 150px;
+  }
+
+  .sentence-image-container {
+    max-width: 260px;
+    height: 170px;
+  }
+
+  .category-badge,
+  .info-badge {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}
+
+/* ============================================
+   工具类
+   ============================================ */
+
+/* 居中容器 */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 响应式间距 */
+.responsive-gap {
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .responsive-gap {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-gap {
+    gap: 15px;
+  }
+}
+

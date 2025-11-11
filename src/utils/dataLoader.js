@@ -1,19 +1,19 @@
 /**
  * 数据加载工具
- * 支持从远程URL或本地文件加载JSON数据
+ * 支持从本地或远程加载JSON数据
+ * 默认使用本地public/data目录，远程作为备用
  */
 
 const DEBUG = true
 
-// 远程数据源配置
-// 开发环境：通过Vite代理访问GitHub Pages（避免CORS）
-// 生产环境：使用部署在同域的public/data目录
-const REMOTE_BASE_URL = import.meta.env.DEV 
-  ? '/api/data'  // 开发环境：通过Vite代理访问远程
-  : '/data'  // 生产环境：使用public/data目录（同域，无CORS问题）
+// 本地数据配置（优先使用本地 public/data 目录）
+const LOCAL_DATA_BASE_URL = '/data'  // public/data
 
-// GitHub Pages备用地址（需要时手动切换）
-const GITHUB_PAGES_URL = 'https://mazaiguo.github.io/blogimg/english-study-data'
+// 远程数据配置（GitHub Pages 备用地址）
+const REMOTE_DATA_BASE_URL = 'https://mazaiguo.github.io/blogimg/english-study-data'
+
+// 数据加载策略：优先使用本地，失败时回退到远程
+const USE_LOCAL_FIRST = true
 
 // 数据文件映射
 const DATA_FILES = {
@@ -37,12 +37,12 @@ const DATA_FILES = {
 }
 
 /**
- * 从远程或本地加载JSON数据
+ * 从本地或远程加载JSON数据
  * @param {String} dataKey - 数据文件key（如：'english_words'）
- * @param {Boolean} useRemote - 是否优先使用远程数据（默认true）
+ * @param {Boolean} useLocal - 是否使用本地数据（默认true，优先本地）
  * @returns {Promise<Object>} - JSON数据
  */
-export async function loadData(dataKey, useRemote = true) {
+export async function loadData(dataKey, useLocal = USE_LOCAL_FIRST) {
   const fileName = DATA_FILES[dataKey]
   
   if (!fileName) {
@@ -51,29 +51,90 @@ export async function loadData(dataKey, useRemote = true) {
 
   if (DEBUG) {
     console.log(`📥 开始加载数据: ${dataKey}`)
-    console.log(`📡 远程模式: ${useRemote ? '是' : '否'}`)
+    console.log(`📂 本地优先模式: ${useLocal ? '是' : '否'}`)
   }
 
-  // 优先尝试远程加载
-  if (useRemote) {
+  // 优先尝试本地加载（从 public/data 目录）
+  if (useLocal) {
     try {
-      // 添加时间戳破坏缓存
-      const timestamp = Date.now()
-      const remoteUrl = `${REMOTE_BASE_URL}/${fileName}?t=${timestamp}`
+      const localUrl = `${LOCAL_DATA_BASE_URL}/${fileName}`
       
       if (DEBUG) {
-        console.log(`🌐 尝试从远程加载: ${remoteUrl}`)
+        console.log(`📂 [本地(public/data)] 加载数据: ${localUrl}`)
+      }
+
+      const response = await fetch(localUrl, {
+        method: 'GET',
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+      }
+
+      const data = await response.json()
+      
+      if (DEBUG) {
+        console.log(`✅ 本地数据加载成功: ${dataKey}`)
+      }
+
+      // 缓存到localStorage
+      cacheData(dataKey, data)
+
+      return data
+    } catch (error) {
+      console.warn(`⚠️ 本地加载失败: ${error.message}`)
+      console.log(`🔄 尝试从远程加载...`)
+      
+      // 本地失败，尝试远程加载
+      try {
+        const remoteUrl = `${REMOTE_DATA_BASE_URL}/${fileName}`
+        
+        if (DEBUG) {
+          console.log(`🌐 [远程(GitHub Pages)] 加载数据: ${remoteUrl}`)
+        }
+
+        const response = await fetch(remoteUrl, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+        }
+
+        const data = await response.json()
+        
+        if (DEBUG) {
+          console.log(`✅ 远程数据加载成功: ${dataKey}`)
+        }
+
+        // 缓存到localStorage
+        cacheData(dataKey, data)
+
+        return data
+      } catch (remoteError) {
+        console.error(`❌ 远程加载也失败: ${remoteError.message}`)
+      }
+    }
+  } else {
+    // 直接使用远程加载
+    try {
+      const remoteUrl = `${REMOTE_DATA_BASE_URL}/${fileName}`
+      
+      if (DEBUG) {
+        console.log(`🌐 [远程(GitHub Pages)] 加载数据: ${remoteUrl}`)
       }
 
       const response = await fetch(remoteUrl, {
         method: 'GET',
         headers: {
-          'Accept': 'application/json',
-          'Cache-Control': 'no-cache, no-store, must-revalidate', // 确保获取最新数据
-          'Pragma': 'no-cache',
-          'Expires': '0'
-        },
-        cache: 'no-store'
+          'Accept': 'application/json'
+        }
       })
 
       if (!response.ok) {
@@ -86,41 +147,24 @@ export async function loadData(dataKey, useRemote = true) {
         console.log(`✅ 远程数据加载成功: ${dataKey}`)
       }
 
-      // 缓存到localStorage（可选）
+      // 缓存到localStorage
       cacheData(dataKey, data)
 
       return data
     } catch (error) {
       console.warn(`⚠️ 远程加载失败: ${error.message}`)
-      console.log(`💾 回退到本地数据`)
     }
   }
 
-  // 回退到本地数据
-  try {
-    if (DEBUG) {
-      console.log(`📂 从本地加载: /src/data/${fileName}`)
-    }
-
-    const localData = await import(`../data/${fileName}`)
-    
-    if (DEBUG) {
-      console.log(`✅ 本地数据加载成功: ${dataKey}`)
-    }
-
-    return localData.default || localData
-  } catch (error) {
-    console.error(`❌ 本地数据加载失败: ${error.message}`)
-    
-    // 尝试从缓存加载
-    const cachedData = getCachedData(dataKey)
-    if (cachedData) {
-      console.log(`💾 从缓存加载数据`)
-      return cachedData
-    }
-
-    throw new Error(`无法加载数据: ${dataKey}`)
+  // 所有加载方式都失败，尝试从缓存加载
+  console.log(`💾 尝试从缓存加载...`)
+  const cachedData = getCachedData(dataKey)
+  if (cachedData) {
+    console.log(`✅ 从缓存加载数据成功`)
+    return cachedData
   }
+
+  throw new Error(`无法加载数据: ${dataKey}（本地、远程、缓存均失败）`)
 }
 
 /**
