@@ -1,40 +1,55 @@
 <template>
   <transition name="slide-up">
     <div v-if="isVisible" class="settings-panel" :style="{ backgroundColor: theme.colors.cardBackground }">
-      <!-- 关闭按钮 -->
-      <div class="close-button" @click="close">
-        <span :style="{ color: theme.colors.primaryText }">✕</span>
+      <!-- 标题栏 -->
+      <div class="panel-header">
+        <h3 class="panel-title" :style="{ color: theme.colors.primaryText }">
+          ⚙️ 设置
+        </h3>
+        <div class="header-buttons">
+          <button
+            class="home-button-header"
+            :style="{
+              backgroundColor: theme.colors.accentYellow,
+              color: theme.colors.whiteText
+            }"
+            @click="goHome"
+            title="返回主页"
+          >
+            🏠
+          </button>
+          <div class="close-button" @click="close">
+            <span :style="{ color: theme.colors.primaryText }">✕</span>
+          </div>
+        </div>
       </div>
-      
-      <!-- 标题 -->
-      <h3 class="panel-title" :style="{ color: theme.colors.primaryText }">
-        ⚙️ 设置
-      </h3>
       
       <!-- 课程选择 -->
       <div v-if="lessons.length > 0" class="setting-group">
         <label class="setting-label" :style="{ color: theme.colors.primaryText }">
-          📚 选择课程
+          📚 选择课程 <span class="lesson-count">(共{{ lessons.length }}课)</span>
         </label>
-        <div class="lesson-buttons">
-          <button
-            class="lesson-button"
-            :class="{ active: settingsStore.currentLesson === 0 }"
-            :style="getLessonButtonStyle(0)"
-            @click="selectLesson(0)"
-          >
-            全部
-          </button>
-          <button
-            v-for="lesson in lessons"
-            :key="lesson"
-            class="lesson-button"
-            :class="{ active: settingsStore.currentLesson === lesson }"
-            :style="getLessonButtonStyle(lesson)"
-            @click="selectLesson(lesson)"
-          >
-            第{{ lesson }}课
-          </button>
+        <div class="lesson-buttons-container">
+          <div class="lesson-buttons">
+            <button
+              class="lesson-button"
+              :class="{ active: settingsStore.currentLesson === 0 }"
+              :style="getLessonButtonStyle(0)"
+              @click="selectLesson(0)"
+            >
+              全部
+            </button>
+            <button
+              v-for="lesson in lessons"
+              :key="lesson"
+              class="lesson-button"
+              :class="{ active: settingsStore.currentLesson === lesson }"
+              :style="getLessonButtonStyle(lesson)"
+              @click="selectLesson(lesson)"
+            >
+              第{{ lesson }}课
+            </button>
+          </div>
         </div>
       </div>
       
@@ -95,20 +110,6 @@
           @click="testSpeech"
         >
           🔊 测试发音
-        </button>
-      </div>
-      
-      <!-- 返回主页按钮 -->
-      <div class="setting-group">
-        <button
-          class="home-button-panel"
-          :style="{
-            backgroundColor: theme.colors.accentYellow,
-            color: theme.colors.whiteText
-          }"
-          @click="goHome"
-        >
-          🏠 返回主页
         </button>
       </div>
     </div>
@@ -219,12 +220,53 @@ const getAccentButtonStyle = (accent) => {
   transition: all 0.3s ease;
 }
 
+/* 标题栏布局 */
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.panel-title {
+  font-size: 32px;
+  margin: 0;
+  flex: 1;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-button-header {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-button-header:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-button-header:active {
+  transform: translateY(0) scale(1);
+}
+
 .close-button {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,12 +281,6 @@ const getAccentButtonStyle = (accent) => {
   transform: scale(1.1);
 }
 
-.panel-title {
-  font-size: 32px;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
 .setting-group {
   margin-bottom: 30px;
 }
@@ -256,10 +292,49 @@ const getAccentButtonStyle = (accent) => {
   margin-bottom: 12px;
 }
 
+.lesson-count {
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.7;
+  margin-left: 8px;
+}
+
+/* 课程按钮容器 - 支持横向滚动 */
+.lesson-buttons-container {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 200px;
+  padding-bottom: 5px;
+  
+  /* 自定义滚动条样式 */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.lesson-buttons-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.lesson-buttons-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.lesson-buttons-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.lesson-buttons-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .lesson-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  min-width: min-content;
 }
 
 .lesson-button {
@@ -286,11 +361,13 @@ const getAccentButtonStyle = (accent) => {
   height: 8px;
   border-radius: 4px;
   outline: none;
+  appearance: none;
   -webkit-appearance: none;
   background: linear-gradient(to right, #42A5F5, #FF9800);
 }
 
 .rate-slider::-webkit-slider-thumb {
+  appearance: none;
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
@@ -358,27 +435,6 @@ const getAccentButtonStyle = (accent) => {
   transform: translateY(0);
 }
 
-.home-button-panel {
-  width: 100%;
-  padding: 18px;
-  border: none;
-  border-radius: 25px;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.home-button-panel:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.home-button-panel:active {
-  transform: translateY(0);
-}
-
 /* 滑入动画 */
 .slide-up-enter-active,
 .slide-up-leave-active {
@@ -397,11 +453,27 @@ const getAccentButtonStyle = (accent) => {
   }
 
   .panel-title {
-    font-size: 26px;
+    font-size: 24px;
+  }
+
+  .home-button-header {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .close-button {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
   }
 
   .setting-label {
     font-size: 18px;
+  }
+
+  .lesson-count {
+    font-size: 12px;
   }
 
   .lesson-button,
@@ -410,10 +482,14 @@ const getAccentButtonStyle = (accent) => {
     padding: 10px 18px;
   }
 
-  .test-button,
-  .home-button-panel {
+  .test-button {
     font-size: 20px;
     padding: 15px;
+  }
+
+  /* 移动端课程按钮容器优化 */
+  .lesson-buttons-container {
+    max-height: 150px;
   }
 }
 </style>
