@@ -169,6 +169,376 @@
       "difficulty": "hard",
       "lesson": 6,
       "imageFile": "mandarin_sentence_17.jpg"
+    },
+    {
+      "id": 18,
+      "hanzi": "看，她的家园好大好大！",
+      "pinyin": "kàn, tā de jiā yuán hǎo dà hǎo dà!",
+      "translation": "Look, her home is so big, so big!",
+      "category": "description",
+      "difficulty": "medium",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_18.jpg"
+    },
+    {
+      "id": 19,
+      "hanzi": "她把绿色的树叶收藏，把金黄的果实收藏。",
+      "pinyin": "tā bǎ lǜ sè de shù yè shōu cáng, bǎ jīn huáng de guǒ shí shōu cáng.",
+      "translation": "She collects the green leaves, collects the golden fruits.",
+      "category": "nature",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_19.jpg"
+    },
+    {
+      "id": 20,
+      "hanzi": "把天空的湛蓝收藏，把小溪的叮咚歌唱收藏。",
+      "pinyin": "bǎ tiān kōng de zhàn lán shōu cáng, bǎ xiǎo xī de dīng dōng gē chàng shōu cáng.",
+      "translation": "Collects the azure blue of the sky, collects the tinkling song of the stream.",
+      "category": "nature",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_20.jpg"
+    },
+    {
+      "id": 21,
+      "hanzi": "哦？她忘记收藏枫叶的红了吗？",
+      "pinyin": "ò? tā wàng jì shōu cáng fēng yè de hóng le ma?",
+      "translation": "Oh? Did she forget to collect the red of the maple leaves?",
+      "category": "question",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_21.jpg"
+    },
+    {
+      "id": 22,
+      "hanzi": "不是！嘻嘻，她呀，要在枫叶上写下红色的信。",
+      "pinyin": "bú shì! xī xī, tā ya, yào zài fēng yè shàng xiě xià hóng sè de xìn.",
+      "translation": "No! Hehe, she wants to write a red letter on the maple leaves.",
+      "category": "answer",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_22.jpg"
+    },
+    {
+      "id": 23,
+      "hanzi": "藏进南飞的大雁的翅膀里，告诉南方的小朋友：",
+      "pinyin": "cáng jìn nán fēi de dà yàn de chì bǎng lǐ, gào su nán fāng de xiǎo péng you:",
+      "translation": "Hidden in the wings of the southward-flying geese, to tell the children in the south:",
+      "category": "nature",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_23.jpg"
+    },
+    {
+      "id": 24,
+      "hanzi": "北方的童话多么优美，好听的故事有多长，多长……",
+      "pinyin": "běi fāng de tóng huà duō me yōu měi, hǎo tīng de gù shi yǒu duō cháng, duō cháng……",
+      "translation": "How beautiful the fairy tales from the north are, how long, how long are the wonderful stories...",
+      "category": "story",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_24.jpg"
+    },
+    {
+      "id": 25,
+      "hanzi": "这是个小秘密，你千万不要和别人讲！",
+      "pinyin": "zhè shì ge xiǎo mì mì, nǐ qiān wàn bú yào hé bié rén jiǎng!",
+      "translation": "This is a little secret, you must not tell anyone else!",
+      "category": "secret",
+      "difficulty": "medium",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_25.jpg"
+    },
+    {
+      "id": 26,
+      "hanzi": "什么上山吱扭扭？什么下山乱点头？",
+      "pinyin": "shén me shàng shān zī niǔ niǔ? shén me xià shān luàn diǎn tóu?",
+      "translation": "What goes up the mountain creaking? What goes down the mountain nodding?",
+      "category": "riddle",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_26.jpg"
+    },
+    {
+      "id": 27,
+      "hanzi": "车子上山吱扭扭，瘸子下山乱点头。",
+      "pinyin": "chē zi shàng shān zī niǔ niǔ, qué zi xià shān luàn diǎn tóu.",
+      "translation": "A cart goes up the mountain creaking, a lame person goes down nodding.",
+      "category": "riddle-answer",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_27.jpg"
+    },
+    {
+      "id": 28,
+      "hanzi": "什么有腿家中坐？什么没腿游五洲？",
+      "pinyin": "shén me yǒu tuǐ jiā zhōng zuò? shén me méi tuǐ yóu wǔ zhōu?",
+      "translation": "What has legs and sits at home? What has no legs and travels the world?",
+      "category": "riddle",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_28.jpg"
+    },
+    {
+      "id": 29,
+      "hanzi": "板凳有腿儿家中坐，小船没腿儿游五洲。",
+      "pinyin": "bǎn dèng yǒu tuǐ er jiā zhōng zuò, xiǎo chuán méi tuǐ er yóu wǔ zhōu.",
+      "translation": "A stool has legs and sits at home, a boat has no legs and travels the world.",
+      "category": "riddle-answer",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_29.jpg"
+    },
+    {
+      "id": 30,
+      "hanzi": "什么圆圆在天边？什么圆圆在眼前？",
+      "pinyin": "shén me yuán yuán zài tiān biān? shén me yuán yuán zài yǎn qián?",
+      "translation": "What is round in the sky? What is round before your eyes?",
+      "category": "riddle",
+      "difficulty": "easy",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_30.jpg"
+    },
+    {
+      "id": 31,
+      "hanzi": "月亮圆圆在天边，眼睛圆圆在眼前。",
+      "pinyin": "yuè liang yuán yuán zài tiān biān, yǎn jing yuán yuán zài yǎn qián.",
+      "translation": "The moon is round in the sky, eyes are round before you.",
+      "category": "riddle-answer",
+      "difficulty": "easy",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_31.jpg"
+    },
+    {
+      "id": 32,
+      "hanzi": "什么开花节节高？什么开花一嘴毛？",
+      "pinyin": "shén me kāi huā jié jié gāo? shén me kāi huā yī zuǐ máo?",
+      "translation": "What blooms higher and higher? What blooms with a hairy mouth?",
+      "category": "riddle",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_32.jpg"
+    },
+    {
+      "id": 33,
+      "hanzi": "芝麻开花节节高，玉米开花一嘴毛。",
+      "pinyin": "zhī ma kāi huā jié jié gāo, yù mǐ kāi huā yī zuǐ máo.",
+      "translation": "Sesame blooms higher and higher, corn blooms with silk tassels.",
+      "category": "riddle-answer",
+      "difficulty": "medium",
+      "lesson": 7,
+      "imageFile": "mandarin_sentence_33.jpg"
+    },
+    {
+      "id": 34,
+      "hanzi": "天上看，满天星。地下看，有个坑。",
+      "pinyin": "tiān shàng kàn, mǎn tiān xīng. dì xià kàn, yǒu ge kēng.",
+      "translation": "Look up, the sky is full of stars. Look down, there is a pit.",
+      "category": "tongue-twister",
+      "difficulty": "medium",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_34.jpg"
+    },
+    {
+      "id": 35,
+      "hanzi": "坑里看，有盘冰。坑外长着一老松。",
+      "pinyin": "kēng lǐ kàn, yǒu pán bīng. kēng wài zhǎng zhe yī lǎo sōng.",
+      "translation": "In the pit, there is ice. Outside the pit grows an old pine tree.",
+      "category": "tongue-twister",
+      "difficulty": "medium",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_35.jpg"
+    },
+    {
+      "id": 36,
+      "hanzi": "松下坐着一老僧。僧前点着一盏灯。",
+      "pinyin": "sōng xià zuò zhe yī lǎo sēng. sēng qián diǎn zhe yī zhǎn dēng.",
+      "translation": "Under the pine sits an old monk. Before the monk burns a lamp.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_36.jpg"
+    },
+    {
+      "id": 37,
+      "hanzi": "灯前搁着一部经。",
+      "pinyin": "dēng qián gē zhe yī bù jīng.",
+      "translation": "Before the lamp lies a scripture.",
+      "category": "tongue-twister",
+      "difficulty": "medium",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_37.jpg"
+    },
+    {
+      "id": 38,
+      "hanzi": "说刮风，就刮风，刮得男女老少难把眼睛睁。",
+      "pinyin": "shuō guā fēng, jiù guā fēng, guā de nán nǚ lǎo shào nán bǎ yǎn jing zhēng.",
+      "translation": "When the wind blows, it blows so hard that people can hardly open their eyes.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_38.jpg"
+    },
+    {
+      "id": 39,
+      "hanzi": "刮散了天上的星，刮平了地下的坑。",
+      "pinyin": "guā sàn le tiān shàng de xīng, guā píng le dì xià de kēng.",
+      "translation": "It scattered the stars in the sky, leveled the pit on the ground.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_39.jpg"
+    },
+    {
+      "id": 40,
+      "hanzi": "刮化了坑里的冰，刮断了坑外的松。",
+      "pinyin": "guā huà le kēng lǐ de bīng, guā duàn le kēng wài de sōng.",
+      "translation": "It melted the ice in the pit, broke the pine tree outside the pit.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_40.jpg"
+    },
+    {
+      "id": 41,
+      "hanzi": "刮走了松下的僧，刮灭了僧前的灯，刮乱了灯前的经。",
+      "pinyin": "guā zǒu le sōng xià de sēng, guā miè le sēng qián de dēng, guā luàn le dēng qián de jīng.",
+      "translation": "It blew away the monk under the pine, extinguished the lamp before the monk, scattered the scripture before the lamp.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_41.jpg"
+    },
+    {
+      "id": 42,
+      "hanzi": "只刮得：星散、坑平、冰化、松倒、僧走、灯灭、经乱还不停。",
+      "pinyin": "zhǐ guā de: xīng sàn, kēng píng, bīng huà, sōng dǎo, sēng zǒu, dēng miè, jīng luàn hái bù tíng.",
+      "translation": "It kept blowing: stars scattered, pit leveled, ice melted, pine fell, monk left, lamp out, scripture scattered, and still not stopping.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_42.jpg"
+    },
+    {
+      "id": 43,
+      "hanzi": "请来玉皇大帝和孙悟空，制服风婆天下宁。",
+      "pinyin": "qǐng lái yù huáng dà dì hé sūn wù kōng, zhì fú fēng pó tiān xià níng.",
+      "translation": "Invite the Jade Emperor and Sun Wukong to subdue the Wind Goddess, and peace returns to the world.",
+      "category": "tongue-twister",
+      "difficulty": "hard",
+      "lesson": 8,
+      "imageFile": "mandarin_sentence_43.jpg"
+    },
+    {
+      "id": 44,
+      "hanzi": "我呀我呀总是觉得不可思议，",
+      "pinyin": "wǒ ya wǒ ya zǒng shì jué de bù kě sī yì,",
+      "translation": "I, oh I, always find it incredible,",
+      "category": "poem",
+      "difficulty": "medium",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_44.jpg"
+    },
+    {
+      "id": 45,
+      "hanzi": "乌黑的云彩里落下来的雨，怎么会变成了银色的雨滴？",
+      "pinyin": "wū hēi de yún cǎi lǐ luò xià lái de yǔ, zěn me huì biàn chéng le yín sè de yǔ dī?",
+      "translation": "How does rain falling from dark clouds turn into silver raindrops?",
+      "category": "poem",
+      "difficulty": "hard",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_45.jpg"
+    },
+    {
+      "id": 46,
+      "hanzi": "我呀我呀总是觉得不可思议，",
+      "pinyin": "wǒ ya wǒ ya zǒng shì jué de bù kě sī yì,",
+      "translation": "I, oh I, always find it incredible,",
+      "category": "poem",
+      "difficulty": "medium",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_46.jpg"
+    },
+    {
+      "id": 47,
+      "hanzi": "绿绿的桑树叶子吃到肚子里，蚕宝宝怎么长得白白胖胖的？",
+      "pinyin": "lǜ lǜ de sāng shù yè zi chī dào dù zi lǐ, cán bǎo bao zěn me zhǎng de bái bái pàng pàng de?",
+      "translation": "When silkworms eat green mulberry leaves, how do they grow white and chubby?",
+      "category": "poem",
+      "difficulty": "hard",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_47.jpg"
+    },
+    {
+      "id": 48,
+      "hanzi": "我呀我呀总是觉得不可思议，",
+      "pinyin": "wǒ ya wǒ ya zǒng shì jué de bù kě sī yì,",
+      "translation": "I, oh I, always find it incredible,",
+      "category": "poem",
+      "difficulty": "medium",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_48.jpg"
+    },
+    {
+      "id": 49,
+      "hanzi": "问谁谁都笑着对我说：那是当然的啦！",
+      "pinyin": "wèn shuí shuí dōu xiào zhe duì wǒ shuō: nà shì dāng rán de la!",
+      "translation": "Everyone I ask just smiles and says: That's natural, of course!",
+      "category": "poem",
+      "difficulty": "medium",
+      "lesson": 9,
+      "imageFile": "mandarin_sentence_49.jpg"
+    },
+    {
+      "id": 50,
+      "hanzi": "爱读书的树叶，捧着阳光读，一天一遍，读得兴奋满脸。",
+      "pinyin": "ài dú shū de shù yè, pěng zhe yáng guāng dú, yī tiān yī biàn, dú de xīng fèn mǎn liǎn.",
+      "translation": "The leaf who loves reading, reads holding the sunlight, once a day, reading with excitement on its face.",
+      "category": "poem",
+      "difficulty": "hard",
+      "lesson": 10,
+      "imageFile": "mandarin_sentence_50.jpg"
+    },
+    {
+      "id": 51,
+      "hanzi": "爱读书的树叶，捧着月光读，一夜一遍，读得平平安安。",
+      "pinyin": "ài dú shū de shù yè, pěng zhe yuè guāng dú, yī yè yī biàn, dú de píng píng ān ān.",
+      "translation": "The leaf who loves reading, reads holding the moonlight, once a night, reading peacefully.",
+      "category": "poem",
+      "difficulty": "hard",
+      "lesson": 10,
+      "imageFile": "mandarin_sentence_51.jpg"
+    },
+    {
+      "id": 52,
+      "hanzi": "一听说风老师来检查，每片树叶便摇头晃脑齐声朗读。",
+      "pinyin": "yī tīng shuō fēng lǎo shī lái jiǎn chá, měi piàn shù yè biàn yáo tóu huàng nǎo qí shēng lǎng dú.",
+      "translation": "Upon hearing Teacher Wind is coming to inspect, every leaf sways and reads aloud in unison.",
+      "category": "poem",
+      "difficulty": "hard",
+      "lesson": 10,
+      "imageFile": "mandarin_sentence_52.jpg"
+    },
+    {
+      "id": 53,
+      "hanzi": "头上红冠不用裁，满身雪白走将来。",
+      "pinyin": "tóu shàng hóng guān bù yòng cái, mǎn shēn xuě bái zǒu jiāng lái.",
+      "translation": "The red crown on its head needs no tailoring, its whole body snow-white as it struts forth.",
+      "category": "classical-poem",
+      "difficulty": "hard",
+      "lesson": 11,
+      "imageFile": "mandarin_sentence_53.jpg"
+    },
+    {
+      "id": 54,
+      "hanzi": "平生不敢轻言语，一叫千门万户开。",
+      "pinyin": "píng shēng bù gǎn qīng yán yǔ, yī jiào qiān mén wàn hù kāi.",
+      "translation": "Throughout its life it dares not speak lightly, but one cry opens a thousand doors and ten thousand homes.",
+      "category": "classical-poem",
+      "difficulty": "hard",
+      "lesson": 11,
+      "imageFile": "mandarin_sentence_54.jpg"
     }
   ]
 }
