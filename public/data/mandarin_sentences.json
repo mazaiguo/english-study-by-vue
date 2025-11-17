@@ -149,6 +149,26 @@
       "difficulty": "easy",
       "lesson": 5,
       "imageFile": "mandarin_sentence_15.jpg"
+    },
+    {
+      "id": 16,
+      "hanzi": "呼——，轻轻，轻轻，秋风来了！",
+      "pinyin": "hū——, qīng qīng, qīng qīng, qiū fēng lái le!",
+      "translation": "\"Whoosh—\", softly, softly, the autumn wind is here!",
+      "category": "nature",
+      "difficulty": "medium",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_16.jpg"
+    },
+    {
+      "id": 17,
+      "hanzi": "她是位辛勤的收藏家，你知道吗？",
+      "pinyin": "tā shì wèi xīn qín de shōu cáng jiā, nǐ zhī dào ma?",
+      "translation": "She is a diligent collector, do you know?",
+      "category": "description",
+      "difficulty": "hard",
+      "lesson": 6,
+      "imageFile": "mandarin_sentence_17.jpg"
     }
   ]
 }
